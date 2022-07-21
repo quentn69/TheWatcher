@@ -3,11 +3,12 @@
 </p>
 
 
-<p align="center">
+<center>
+  
 ```
   Searches through websites for a specific username - At incredible speed!
 ```
-</p>
+
   
 <br>
 
@@ -51,3 +52,4 @@ This program is for educational purposes only!
 
 
 [quentn69](https://github.com/quentn69)
+ </center>
