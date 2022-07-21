@@ -14,10 +14,11 @@
 
 
 
-#### Please remember that this is a new project. If you have an idea, open an issue.
+<p align="center">Please remember that this is a new project. If you have an idea, open an issue.</p>
 <br>
-
-`These are the websites that'll work 100%`
+  
+<p align="center">`These are the websites that'll work 100%`</p>
+  
 
 <center>
 
@@ -47,8 +48,7 @@ Znaplink
 
 <br>
 
-
-This program is for educational purposes only!
+<p align="center">This program is for educational purposes only!</p>
 
 
 [quentn69](https://github.com/quentn69)
