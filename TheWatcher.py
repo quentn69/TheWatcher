@@ -1,3 +1,4 @@
+'''
 MIT License
 
 Copyright (c) 2022 quentn69
@@ -19,3 +20,17 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+'''
+
+# Don't forget to ⭐ this repository
+# But srsly, thank you very much for using.
+
+import os
+from util.update import check_for_update
+from util.script import start
+
+if __name__ == "__main__":
+    os.system(f"title The Watcher ┃ Checking for Updates... | mode 70, 40")
+    check_for_update()
+    os.system(f"title The Watcher ┃ Starting...")
+    start()
