@@ -4,13 +4,10 @@
 
 
 <center>
-  
-  
-
 ```
   Searches through websites for a specific username - At incredible speed!
 ```
-
+</center>
   
 <br>
 
