@@ -189,6 +189,16 @@ def start():
             pass  
 
 
+    def get_openstreetmap(): #https://www.openstreetmap.org/user/kyliejenner
+        os.system(f"title The Watcher ┃ {current} ┃ Checking: OpenStreetMap")
+        openstreetmap = requests.get(f"https://www.openstreetmap.org/user/{usr}/")
+        if openstreetmap.status_code == 200:
+            print(Colors.light_green + 'OpenStreetMap'.center(70))
+            f.write(f"OPENSTREETMAP  | https://www.openstreetmap.org/user/{usr}/\n")
+        else:
+            pass  
+
+
     def get_pastebin(): #https://pastebin.com/u/kyliejenner
         os.system(f"title The Watcher ┃ {current} ┃ Checking: Pastebin")
         patebin = requests.get(f"https://www.pastebin.com/u/{usr}/")
@@ -323,6 +333,7 @@ def start():
         get_gutefrage()
         get_linktree()
         get_mcpedl()
+        get_openstreetmap()
         get_pastebin()
         get_quora()
         get_snapchat()
