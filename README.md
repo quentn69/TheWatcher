@@ -39,7 +39,6 @@ Quora
 Reddit
 Snapchat
 Spotify
-TikTok (@)
 TikTok (#)
 Wattpad
 Yahoo
