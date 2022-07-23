@@ -1,24 +1,29 @@
-<p align="center">
-<img src="https://media.discordapp.net/attachments/993529387469262950/999702134285144224/main.png?width=509&height=521", width="400", height="400">
-</p>
+<p align="center"><img src="https://media.discordapp.net/attachments/993529387469262950/999702134285144224/main.png?width=509&height=521", width="400", height="400"></p>
 
-
-<center>
-  
 ```
-  Finds a specific username - At incredible speed! 
+Finds a specific username - At incredible speed! 
 ```
+<br>
 
-  
+
+<p align="center">Please remember that this is a new project. If you have an idea or an error, open an issue.</p>
+
+---
+
+## Tutorial 
+
+**First, you have to install [Python](https://www.python.org/downloads).**
+<br>
+Then, you can run **`installer.bat`** to install the requirements.
+<br>
+**That's it.**
+
 <br>
 
 
 
-<p align="center">Please remember that this is a new project. If you have an idea, open an issue.</p>
-<br>
-  
 ## Websites
-  
+
 
 <center>
 
@@ -31,15 +36,16 @@ Buzzfeed
 Crunchyroll
 Discord.io
 GitHub
-Gutefrage.net
+Gutefrage
 Linktree
 MCPEDL
+OpenStreetMap
 Pastebin
 Quora
-Reddit
 Snapchat
 Spotify
-TikTok (#)
+TikTok @
+TikTok #
 Wattpad
 Yahoo
 Znaplink
@@ -47,8 +53,18 @@ Znaplink
 
 <br>
 
+<br>
+
+## Contact me
+--- 
+
+[GitHub](https://github.com/quentn69)
+<br>
+quentn#6969
+
+--- 
+<br>
 <p align="center">This program is for educational purposes only!</p>
+<p align="center">It's not sponsored or affiliated by Marvel.</p>
 
 
-[quentn69](https://github.com/quentn69)
- </center>
