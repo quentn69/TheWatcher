@@ -33,7 +33,6 @@ import webbrowser
 from time import *
 from pystyle import Colors, Colorate
 
-
 banner = f'''
 {"██╗    ██╗ █████╗ ████████╗ ██████╗██╗  ██╗███████╗██████╗ ".center(70)}
 {"██║    ██║██╔══██╗╚══██╔══╝██╔════╝██║  ██║██╔════╝██╔══██╗".center(70)}
@@ -43,7 +42,6 @@ banner = f'''
 {" ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝    ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝".center(70)}
 '''
 
-
 os.system(f"title The Watcher ┃ Checking for Internet... | mode 70, 40")
 print(Colors.orange + "Trying to get internet connection. This could take a few seconds.")
 try:
@@ -52,7 +50,6 @@ try:
 except:
     connection = False
     pass
-
 
 
 def start():
