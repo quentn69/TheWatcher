@@ -17,7 +17,7 @@
 <p align="center">Please remember that this is a new project. If you have an idea, open an issue.</p>
 <br>
   
-<p align="center">`These are the websites that'll work 100%`</p>
+<p align="center">`Websites`</p>
   
 
 <center>
