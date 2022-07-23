@@ -6,7 +6,7 @@
 <center>
   
 ```
-  Searches through websites for a specific username - At incredible speed!
+  Finds a specific username - At incredible speed! 
 ```
 
   
