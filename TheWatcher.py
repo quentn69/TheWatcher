@@ -46,7 +46,7 @@ current = "1.1"
 
 
 os.system(f"title The Watcher ┃ {current} ┃ Checking for Updates... | mode 70, 40")
-
+print(Colors.orange + "Trying to get internet connection...")
 try:
     version = requests.get("https://pastebin.com/raw/m15JLVSL").text
     connection = True
@@ -55,7 +55,7 @@ try:
             pass
         else:
             os.system(f"title The Watcher ┃ {current} ┃ New Version!")
-            update_input = input(Colors.red + 'A new version is available! Do you want to install it? (Y/n) '.center(70))
+            update_input = input(Colors.green + 'A new version is available! Do you want to install it? (Y/n) '.center(70))
             if update_input == "n" or update_input == "N":
                 pass
             else:
@@ -301,10 +301,9 @@ def start():
         print(Colorate.Horizontal(Colors.white_to_black, banner, 1))
         print("You're offline. The Watcher won't work without a connection.".center(70))
         print(Colors.white + "━"*70)
-        print("Press W to restart.".center(70))
-        while connection == False:
-            if keyboard.is_pressed("W"):
-                start()
+        print("Press ENTER to restart.".center(70))
+        input()
+        start()
 
     folder_name = usr[0]
     d = datetime.datetime.now()
@@ -350,8 +349,13 @@ def start():
     print("\n")
     print(Colors.white + "=====".center(70))
     print(Colors.white + "Available links were written into the folder.".center(70))
-    print(str(Colors.white + "            Press" + Colors.light_green + " ENTER " + Colors.white + "to use again."))
-    input()
+    print(str(Colors.white + "            ENTER | " + Colors.light_green + "Use again"))
+    print(str(Colors.white + "              Q   | " + Colors.light_green + "Open created file"))
+    end_input = input()
+    if end_input == "q" or "Q":
+        os.popen(os.getcwd() + f"/checked_accounts/{folder_name.upper()}")
+    else:
+        start()
     start()
 
 
