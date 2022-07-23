@@ -48,9 +48,8 @@ current = "1.1"
 os.system(f"title The Watcher ┃ {current} ┃ Checking for Updates... | mode 70, 40")
 
 try:
-    version = requests.get("https://www.google.com") # Getting Google is faster
-    connection = True
     version = requests.get("https://pastebin.com/raw/m15JLVSL").text
+    connection = True
     try:
         if version == current:
             pass
