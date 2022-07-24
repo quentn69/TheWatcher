@@ -83,6 +83,16 @@ def start():
             pass
 
 
+    def get_allmylinks(): #https://allmylinks.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: AllMyLinks")
+        allmylinks = requests.get(f"https://allmylinks.com/{usr}")
+        if allmylinks.status_code == 200:
+            print(Colors.light_green + 'AllMyLinks'.center(70))
+            f.write(f"ALLMYLINKS          | https://allmylinks.com/{usr}\n")
+        else:
+            pass
+
+
     def get_appledeveloper(): #https://developer.apple.com/forums/profile/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Apple (Developer)")
         appledeveloper = requests.get(f"https://developer.apple.com/forums/profile/{usr}")
@@ -461,6 +471,7 @@ def start():
 
         get_9gag()
         get_aboutme()
+        get_allmylinks()
         get_askfm()
         get_appledeveloper()
         get_asciicinema()
