@@ -68,7 +68,7 @@ def start():
         ninegag = requests.get(f"https://9gag.com/u/{usr}")
         if ninegag.status_code == 200:
             print(Colors.light_green + '9gag'.center(70))
-            f.write(f"9GAG           | https://9gag.com/u/{usr}\n")
+            f.write(f"9GAG                | https://9gag.com/u/{usr}\n")
         else:
             pass
 
@@ -78,7 +78,27 @@ def start():
         about_me = requests.get(f"https://www.about.me/{usr}/")
         if about_me.status_code == 200:
             print(Colors.light_green + 'about.me'.center(70))
-            f.write(f"ABOUT.ME       | https://www.about.me/{usr}/\n")
+            f.write(f"ABOUT.ME            | https://www.about.me/{usr}/\n")
+        else:
+            pass
+
+
+    def get_appledeveloper(): #https://developer.apple.com/forums/profile/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Apple (Developer)")
+        appledeveloper = requests.get(f"https://developer.apple.com/forums/profile/{usr}")
+        if appledeveloper.status_code == 200:
+            print(Colors.light_green + 'Apple Developer'.center(70))
+            f.write(f"APPLE DEVELOPER     | https://developer.apple.com/forums/profile/{usr}\n")
+        else:
+            pass
+
+
+    def get_asciicinema(): #https://asciinema.org/~kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Asciicinema")
+        asciicinema = requests.get(f"https://asciinema.org/~{usr}")
+        if asciicinema.status_code == 200:
+            print(Colors.light_green + 'Asciicinema'.center(70))
+            f.write(f"ASCIICINEMA         | https://asciinema.org/~{usr}\n")
         else:
             pass
 
@@ -88,7 +108,7 @@ def start():
         askfm = requests.get(f"https://ask.fm/{usr}")
         if askfm.status_code == 200:
             print(Colors.light_green + 'ask.fm'.center(70))
-            f.write(f"ASK.FM         | https://ask.fm/{usr}\n")
+            f.write(f"ASK.FM              | https://ask.fm/{usr}\n")
         else:
             pass    
 
@@ -97,7 +117,7 @@ def start():
         behance = requests.get(f"https://www.behance.net/{usr}/")
         if behance.status_code == 200:
             print(Colors.light_green + 'Behance'.center(70))
-            f.write(f"BEHANCE        | https://www.behance.net/{usr}/\n")
+            f.write(f"BEHANCE             | https://www.behance.net/{usr}/\n")
         else:
             pass
 
@@ -107,7 +127,17 @@ def start():
         buzzfeed = requests.get(f"https://www.buzzfeed.com/{usr}/")
         if buzzfeed.status_code == 200:
             print(Colors.light_green + 'Buzzfeed'.center(70))
-            f.write(f"BUZZFEED       | https://www.buzzfeed.com/{usr}/\n")
+            f.write(f"BUZZFEED            | https://www.buzzfeed.com/{usr}/\n")
+        else:
+            pass
+
+
+    def get_chess(): #https://www.chess.com/member/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Chess")
+        chess = requests.get(f"https://www.chess.com/member/{usr}")
+        if chess.status_code == 200:
+            print(Colors.light_green + 'Chess'.center(70))
+            f.write(f"CHESS              | https://www.chess.com/member/{usr}\n")
         else:
             pass
 
@@ -117,7 +147,7 @@ def start():
         crunchyroll = requests.get(f"https://www.crunchyroll.com/user/{usr}/")
         if crunchyroll.status_code == 200:
             print(Colors.light_green + 'Crunchyroll'.center(70))
-            f.write(f"CRUNCHYROLL    | https://www.crunchyroll.com/user/{usr}/\n")
+            f.write(f"CRUNCHYROLL         | https://www.crunchyroll.com/user/{usr}/\n")
         else:
             pass
 
@@ -127,7 +157,37 @@ def start():
         discordio = requests.get(f"https://discord.io/{usr}/")
         if discordio.status_code == 200:
             print(Colors.light_green + 'Discord.io'.center(70))
-            f.write(f"DISCORD.IO     | https://discord.io/{usr}/\n")
+            f.write(f"DISCORD.IO          | https://discord.io/{usr}/\n")
+        else:
+            pass
+
+
+    def get_geniusartist(): #https://genius.com/artists/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Genius (Artist)")
+        geniusartist = requests.get(f"https://genius.com/artists/{usr}")
+        if geniusartist.status_code == 200:
+            print(Colors.light_green + 'Genius Artist'.center(70))
+            f.write(f"GENIUS ARTIST       | https://genius.com/artists/{usr}\n")
+        else:
+            pass
+
+
+    def get_geniususer(): #https://genius.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Genius (User)")
+        geniususer = requests.get(f"https://genius.com/{usr}")
+        if geniususer.status_code == 200:
+            print(Colors.light_green + 'Genius User'.center(70))
+            f.write(f"GENIUS USER         | https://genius.com/{usr}\n")
+        else:
+            pass
+
+
+    def get_gitbook(): #https://kyliejenner.gitbook.io/project/
+        os.system(f"title The Watcher ┃ Checking: GitBook")
+        geniususer = requests.get(f"https://{usr}.gitbook.io/project/")
+        if geniususer.status_code == 200:
+            print(Colors.light_green + 'GitBook'.center(70))
+            f.write(f"GITBOOK             | https://{usr}.gitbook.io/project/\n")
         else:
             pass
 
@@ -137,7 +197,7 @@ def start():
         github = requests.get(f"https://www.github.com/{usr}/")
         if github.status_code == 200:
             print(Colors.light_green + 'GitHub'.center(70))
-            f.write(f"GITHUB         | https://www.github.com/{usr}/\n")
+            f.write(f"GITHUB              | https://www.github.com/{usr}/\n")
         else:
             pass
 
@@ -147,7 +207,7 @@ def start():
         gutefrage = requests.get(f"https://www.gutefrage.net/nutzer/{usr}/fragen")
         if gutefrage.status_code == 200:
             print(Colors.light_green + 'Gutefrage'.center(70))
-            f.write(f"GUTEFRAGE      | hhttps://www.gutefrage.net/nutzer/{usr}/\n")
+            f.write(f"GUTEFRAGE           | hhttps://www.gutefrage.net/nutzer/{usr}/\n")
         else:
             pass
 
@@ -157,7 +217,7 @@ def start():
         linktree = requests.get(f"https://www.linktr.ee/{usr}/")
         if linktree.status_code == 200:
             print(Colors.light_green + 'Linktree'.center(70))
-            f.write(f"LINKTREE       | https://www.linktr.ee/{usr}/\n")
+            f.write(f"LINKTREE            | https://www.linktr.ee/{usr}/\n")
         else:
             pass
 
@@ -167,7 +227,7 @@ def start():
         mcpedl = requests.get(f"https://mcpedl.com/user/{usr}/")
         if mcpedl.status_code == 200:
             print(Colors.light_green + 'MCPEDL'.center(70))
-            f.write(f"MCPEDL         | https://mcpedl.com/user/{usr}/\n")
+            f.write(f"MCPEDL              | https://mcpedl.com/user/{usr}/\n")
         else:
             pass
 
@@ -177,7 +237,27 @@ def start():
         mojang = requests.get(f"https://api.mojang.com/users/profiles/minecraft/{usr}")
         if mojang.status_code == 200:
             print(Colors.light_green + 'Mojang'.center(70))
-            f.write(f"MOJANG         | https://api.mojang.com/users/profiles/minecraft/{usr}\n")
+            f.write(f"MOJANG              | https://api.mojang.com/users/profiles/minecraft/{usr}\n")
+        else:
+            pass
+
+
+    def get_myanimelist(): #https://myanimelist.net/profile/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: MyAnimeList")
+        myanimelist = requests.get(f"https://myanimelist.net/profile/{usr}")
+        if myanimelist.status_code == 200:
+            print(Colors.light_green + 'MyAnimeList'.center(70))
+            f.write(f"MYANIMELIST        | https://myanimelist.net/profile/{usr}\n")
+        else:
+            pass
+
+
+    def get_newgrounds(): #https://kyliejenner.newgrounds.com
+        os.system(f"title The Watcher ┃ Checking: Newgrounds")
+        newgrounds = requests.get(f"https://{usr}.newgrounds.com")
+        if newgrounds.status_code == 200:
+            print(Colors.light_green + 'Newgrounds'.center(70))
+            f.write(f"NEWGROUNDS          | https://{usr}.newgrounds.com\n")
         else:
             pass
 
@@ -187,7 +267,7 @@ def start():
         osu = requests.get(f"https://osu.ppy.sh/users/{usr}")
         if osu.status_code == 200:
             print(Colors.light_green + 'osu!'.center(70))
-            f.write(f"osu!           | https://osu.ppy.sh/users/{usr}\n")
+            f.write(f"osu!                | https://osu.ppy.sh/users/{usr}\n")
         else:
             pass
 
@@ -197,7 +277,7 @@ def start():
         openstreetmap = requests.get(f"https://www.openstreetmap.org/user/{usr}/")
         if openstreetmap.status_code == 200:
             print(Colors.light_green + 'OpenStreetMap'.center(70))
-            f.write(f"OPENSTREETMAP  | https://www.openstreetmap.org/user/{usr}/\n")
+            f.write(f"OPENSTREETMAP       | https://www.openstreetmap.org/user/{usr}/\n")
         else:
             pass  
 
@@ -207,7 +287,17 @@ def start():
         patebin = requests.get(f"https://www.pastebin.com/u/{usr}/")
         if patebin.status_code == 200:
             print(Colors.light_green + 'Pastebin'.center(70))
-            f.write(f"PASTEBIN       | https://www.pastebin.com/u/{usr}/\n")
+            f.write(f"PASTEBIN            | https://www.pastebin.com/u/{usr}/\n")
+        else:
+            pass
+
+
+    def get_pypi(): #https://pypi.org/user/kyliejenner/
+        os.system(f"title The Watcher ┃ Checking: PyPi")
+        pypi = requests.get(f"https://pypi.org/user/{usr}/")
+        if pypi.status_code == 200:
+            print(Colors.light_green + 'PyPi'.center(70))
+            f.write(f"PYPI                | https://pypi.org/user/{usr}/\n")
         else:
             pass
 
@@ -217,17 +307,7 @@ def start():
         quora = requests.get(f"https://www.quora.com/profile/{usr}/")
         if quora.status_code == 200:
             print(Colors.light_green + 'Quora'.center(70))
-            f.write(f"QUORA          | https://www.quora.com/profile/{usr}/\n")
-        else:
-            pass
-
-
-    def get_spotify(): #https://open.spotify.com/user/kyliejenner
-        os.system(f"title The Watcher ┃ Checking: Spotify")
-        spotify = requests.get(f"https://open.spotify.com/user/{usr}/")
-        if spotify.status_code == 200:
-            print(Colors.light_green + 'Spotify'.center(70))
-            f.write(f"SPOTIFY        | https://open.spotify.com/user/{usr}/\n")
+            f.write(f"QUORA               | https://www.quora.com/profile/{usr}/\n")
         else:
             pass
 
@@ -237,7 +317,27 @@ def start():
         snapchat = requests.get(f"https://www.snapchat.com/add/{usr}/")
         if snapchat.status_code == 200:
             print(Colors.light_green + 'Snapchat'.center(70))
-            f.write(f"SNAPCHAT       | https://www.snapchat.com/add/{usr}/\n")
+            f.write(f"SNAPCHAT            | https://www.snapchat.com/add/{usr}/\n")
+        else:
+            pass
+
+
+    def get_sourceforge(): #https://sourceforge.net/u/kyliejenner/profile/
+        os.system(f"title The Watcher ┃ Checking: SourceForge")
+        sourceforge = requests.get(f"https://sourceforge.net/u/{usr}/profile/")
+        if sourceforge.status_code == 200:
+            print(Colors.light_green + 'SourceForge'.center(70))
+            f.write(f"SOURCEFORGE          | https://sourceforge.net/u/{usr}/profile/\n")
+        else:
+            pass
+
+
+    def get_spotify(): #https://open.spotify.com/user/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Spotify")
+        spotify = requests.get(f"https://open.spotify.com/user/{usr}/")
+        if spotify.status_code == 200:
+            print(Colors.light_green + 'Spotify'.center(70))
+            f.write(f"SPOTIFY             | https://open.spotify.com/user/{usr}/\n")
         else:
             pass
 
@@ -247,7 +347,7 @@ def start():
         tiktok = requests.get(f"https://www.tiktok.com/@{usr}/")
         if tiktok.status_code == 200:
             print(Colors.light_green + 'TikTok @'.center(70))
-            f.write(f"TIKTOK @       | https://www.tiktok.com/@{usr}/\n")
+            f.write(f"TIKTOK @            | https://www.tiktok.com/@{usr}/\n")
         else:
             pass
 
@@ -257,7 +357,17 @@ def start():
         tiktok = requests.get(f"https://www.tiktok.com/tag/{usr}/")
         if tiktok.status_code == 200:
             print(Colors.light_green + 'TikTok #'.center(70))
-            f.write(f"TIKTOK #       | https://www.tiktok.com/tag/{usr}/\n")
+            f.write(f"TIKTOK #            | https://www.tiktok.com/tag/{usr}/\n")
+        else:
+            pass
+
+
+    def get_tradingview(): #https://www.tradingview.com/u/kyliejenner/
+        os.system(f"title The Watcher ┃ Checking: Tradingview")
+        tradingview = requests.get(f"https://www.tradingview.com/u/{usr}/")
+        if tradingview.status_code == 200:
+            print(Colors.light_green + 'Tradingview'.center(70))
+            f.write(f"TRADINGVIEW         | https://www.tradingview.com/u/{usr}/\n")
         else:
             pass
 
@@ -267,7 +377,17 @@ def start():
         wattpad = requests.get(f"https://www.wattpad.com/user/{usr}/")
         if wattpad.status_code == 200:
             print(Colors.light_green + 'Wattpad'.center(70))
-            f.write(f"WATTPAD        | https://www.wattpad.com/user/{usr}/\n")
+            f.write(f"WATTPAD             | https://www.wattpad.com/user/{usr}/\n")
+        else:
+            pass
+
+
+    def get_wordpressuser(): #https://profiles.wordpress.org/kyliejenner/
+        os.system(f"title The Watcher ┃ Checking: Wordpress @")
+        wordpressuser = requests.get(f"https://profiles.wordpress.org/{usr}/")
+        if wordpressuser.status_code == 200:
+            print(Colors.light_green + 'Wordpress @'.center(70))
+            f.write(f"WORDPRESS USER      | https://profiles.wordpress.org/{usr}/\n")
         else:
             pass
 
@@ -277,7 +397,7 @@ def start():
         yahoo = requests.get(f"https://www.yahoo.com/author/{usr}/")
         if yahoo.status_code == 200:
             print(Colors.light_green + 'Yahoo (Author)'.center(70))
-            f.write(f"YAHOO AUTHOR   | https://www.yahoo.com/author/{usr}/\n")
+            f.write(f"YAHOO AUTHOR        | https://www.yahoo.com/author/{usr}/\n")
         else:
             pass
 
@@ -287,7 +407,7 @@ def start():
         znaplink = requests.get(f"https://znap.link/{usr}/")
         if znaplink.status_code == 200:
             print(Colors.light_green + 'Znaplink'.center(70))
-            f.write(f"ZNAPLINK       | https://znap.link/{usr}/\n")
+            f.write(f"ZNAPLINK            | https://znap.link/{usr}/\n")
         else:
             pass
 
@@ -332,26 +452,38 @@ def start():
         get_9gag()
         get_aboutme()
         get_askfm()
+        get_appledeveloper()
+        get_asciicinema()
         get_behance()
         get_buzzfeed()
+        get_chess()
         get_crunchyroll()
         get_discordio()
+        get_geniusartist()
+        get_geniususer()
+        get_gitbook()
         get_github()
         get_gutefrage()
         get_linktree()
         get_mcpedl()
         get_mojang()
+        get_myanimelist()
+        get_newgrounds()
         get_osu()
         get_openstreetmap()
         get_pastebin()
+        get_pypi()
         get_quora()
-        get_snapchat()
+        get_sourceforge()
         get_spotify()
+        get_snapchat()
 
         get_tiktok_user()
         get_tiktok_hastag()
+        get_tradingview()
 
         get_wattpad()
+        get_wordpressuser()
         get_yahooauthor()
         get_znaplink()
         f.write("\n\nmade by github.com/quentn69 | https://github.com/quentn69/TheWatcher")

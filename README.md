@@ -37,26 +37,38 @@ Then, you can run **`installer.bat`** to install the requirements.
 ```
 9gag
 about.me
+Apple (Developer)
+Asciicinema
 Ask.fm
 Behance
 Buzzfeed
+Chess
 Crunchyroll
 Discord.io
+Genius (Artist)
+Genius (User)
+GitBook
 GitHub
 Gutefrage
 Linktree
 MCPEDL
 Mojang
+MyAnimeList
+Newgrounds
 osu!
 OpenStreetMap
 Pastebin
+PyPi
 Quora
 Snapchat
+SourceForge
 Spotify
 TikTok @
 TikTok #
+Tradingview
 Wattpad
-Yahoo
+Wordpress (User)
+Yahoo (Author)
 Znaplink
 ```
 
