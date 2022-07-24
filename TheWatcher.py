@@ -214,6 +214,16 @@ def start():
             pass
 
 
+    def get_deviantart(): #https://www.deviantart.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: DeviantArt")
+        deviantart = requests.get(f"https://www.deviantart.com/{usr}")
+        if deviantart.status_code == 200:
+            print(Colors.light_green + 'DeviantArt'.center(70))
+            f.write(f"DEVIANTART          | https://www.deviantart.com/{usr}\n")
+        else:
+            pass
+
+
     def get_discordio(): #https://discord.io/kyliejenner/
         os.system(f"title The Watcher ┃ Checking: Discord.io")
         discordio = requests.get(f"https://discord.io/{usr}/")
@@ -224,12 +234,12 @@ def start():
             pass
 
 
-    def get_deviantart(): #https://www.deviantart.com/kyliejenner
-        os.system(f"title The Watcher ┃ Checking: DeviantArt")
-        deviantart = requests.get(f"https://www.deviantart.com/{usr}")
-        if deviantart.status_code == 200:
-            print(Colors.light_green + 'DeviantArt'.center(70))
-            f.write(f"DEVIANTART          | https://www.deviantart.com/{usr}\n")
+    def get_ebay(): #https://www.ebay.de/str/brandstown24
+        os.system(f"title The Watcher ┃ Checking: Ebay")
+        ebay = requests.get(f"https://www.ebay.de/str/{usr}")
+        if ebay.status_code == 200:
+            print(Colors.light_green + 'Ebay'.center(70))
+            f.write(f"EBAY                | https://www.ebay.de/str/{usr}\n")
         else:
             pass
 
@@ -587,6 +597,7 @@ def start():
         get_crunchyroll()
         get_deviantart()
         get_discordio()
+        get_ebay()
         get_eyeem()
         get_f3cool()
         get_geniusartist()
