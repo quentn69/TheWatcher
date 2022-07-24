@@ -203,6 +203,16 @@ def start():
             pass
 
 
+    def get_eyeem(): #https://www.eyeem.com/u/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Eyeem")
+        eyeem = requests.get(f"https://www.eyeem.com/u/{usr}")
+        if eyeem.status_code == 200:
+            print(Colors.light_green + 'Eyeem'.center(70))
+            f.write(f"EYEEM               | https://www.eyeem.com/u/{usr}\n")
+        else:
+            pass
+
+
     def get_flipboard(): #https://flipboard.com/@kyliejenner
         os.system(f"title The Watcher ┃ Checking: Flipboard")
         flipboard = requests.get(f"https://flipboard.com/@{usr}")
@@ -514,6 +524,7 @@ def start():
         get_crunchyroll()
         get_discordio()
         get_deviantart()
+        get_eyeem()
         get_flipboard()
         get_geniusartist()
         get_geniususer()
@@ -551,7 +562,7 @@ def start():
     print(str(Colors.white + "            ENTER | " + Colors.light_green + "Use again"))
     print(str(Colors.white + "              Q   | " + Colors.light_green + "Open created file"))
     end_input = input()
-    if end_input == "q" or "Q":
+    if end_input == "q":
         os.popen(f"{os.getcwd()}/checked_accounts/{folder_name.upper()}/{usr}.txt")
     else:
         start()
