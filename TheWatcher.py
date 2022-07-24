@@ -549,7 +549,6 @@ def start():
         get_discordio()
         get_eyeem()
         get_f3cool()
-        get_flipboard()
         get_geniusartist()
         get_geniususer()
         get_gitbook()

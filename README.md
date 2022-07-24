@@ -54,6 +54,7 @@ Discord.io
 Eyeem
 F3.cool
 Genius (Artist)
+Genius (User)
 GitBook
 GitHub
 GuteFrage
