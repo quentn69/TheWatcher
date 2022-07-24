@@ -34,6 +34,53 @@ Then, you can run **`installer.bat`** to install the requirements.
 
 <center>
 
+        get_7cups()
+        get_9gag()
+        get_aboutme()
+        get_academia()
+        get_allmylinks()
+        get_appledeveloper()
+        get_arduino()
+        get_asciicinema()
+        get_askfm()
+        get_behance()
+        get_blogspot()
+        get_bookcrossing()
+        get_buzzfeed()
+        get_chess()
+        get_crunchyroll()
+        get_deviantart()
+        get_discordio()
+        get_eyeem()
+        get_f3cool()
+        get_geniusartist()
+        get_geniususer()
+        get_giphy()
+        get_gitbook()
+        get_github()
+        get_gutefrage()
+        get_linktree()
+        get_mcpedl()
+        get_mojang()
+        get_myanimelist()
+        get_newgrounds()
+        get_openstreetmap()
+        get_osu()
+        get_pastebin()
+        get_pypi()
+        get_quora()
+        get_snapchat()
+        get_sourceforge()
+        get_spotify()
+        get_tiktok_hastag()
+        get_tiktok_user()
+        get_tradingview()
+        get_wattpad()
+        get_wordpressuser()
+        get_yahooauthor()
+        get_znaplink()
+
+
 ```
 7Cups
 9gag
@@ -41,6 +88,7 @@ About.me
 Academia
 AllMyLinks
 Apple (Developer)
+Arduino
 Asciicinema
 Ask.fm
 Behance
@@ -55,6 +103,7 @@ Eyeem
 F3.cool
 Genius (Artist)
 Genius (User)
+Giphy
 GitBook
 GitHub
 GuteFrage
@@ -81,7 +130,6 @@ Znaplink
 ```
 
 <br>
-
 <br>
 
 ## Contact me

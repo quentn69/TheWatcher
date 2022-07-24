@@ -123,6 +123,17 @@ def start():
             pass
 
 
+    def get_arduino(): #https://create.arduino.cc/projecthub/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Arduino")
+        arduino = requests.get(f"https://create.arduino.cc/projecthub/{usr}")
+        if arduino.status_code == 200:
+            print(Colors.light_green + 'Arduino'.center(70))
+            f.write(f"ARDUINO             | https://create.arduino.cc/projecthub/{usr}\n")
+        else:
+            pass
+
+
+
     def get_asciicinema(): #https://asciinema.org/~kyliejenner
         os.system(f"title The Watcher ┃ Checking: Asciicinema")
         asciicinema = requests.get(f"https://asciinema.org/~{usr}")
@@ -251,7 +262,6 @@ def start():
             f.write(f"GENIUS ARTIST       | https://genius.com/artists/{usr}\n")
         else:
             pass
-        sleep(3)
 
 
     def get_geniususer(): #https://genius.com/kyliejenner
@@ -260,6 +270,16 @@ def start():
         if geniususer.status_code == 200:
             print(Colors.light_green + 'Genius User'.center(70))
             f.write(f"GENIUS USER         | https://genius.com/{usr}\n")
+        else:
+            pass
+
+
+    def get_giphy(): #https://giphy.com/explore/timmywag/
+        os.system(f"title The Watcher ┃ Checking: Giphy")
+        giphy = requests.get(f"https://giphy.com/explore/{usr}/")
+        if giphy.status_code == 200:
+            print(Colors.light_green + 'Giphy'.center(70))
+            f.write(f"GIPHY               | https://giphy.com/explore/{usr}/\n")
         else:
             pass
 
@@ -537,6 +557,7 @@ def start():
         get_academia()
         get_allmylinks()
         get_appledeveloper()
+        get_arduino()
         get_asciicinema()
         get_askfm()
         get_behance()
@@ -551,6 +572,7 @@ def start():
         get_f3cool()
         get_geniusartist()
         get_geniususer()
+        get_giphy()
         get_gitbook()
         get_github()
         get_gutefrage()
