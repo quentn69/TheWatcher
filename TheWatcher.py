@@ -162,6 +162,16 @@ def start():
             pass
 
 
+    def get_deviantart(): #https://www.deviantart.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: DeviantArt")
+        deviantart = requests.get(f"https://www.deviantart.com/{usr}")
+        if deviantart.status_code == 200:
+            print(Colors.light_green + 'DeviantArt'.center(70))
+            f.write(f"DEVIANTART          | https://www.deviantart.com/{usr}\n")
+        else:
+            pass
+
+
     def get_geniusartist(): #https://genius.com/artists/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Genius (Artist)")
         geniusartist = requests.get(f"https://genius.com/artists/{usr}")
@@ -459,6 +469,7 @@ def start():
         get_chess()
         get_crunchyroll()
         get_discordio()
+        get_deviantart()
         get_geniusartist()
         get_geniususer()
         get_gitbook()
