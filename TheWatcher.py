@@ -338,7 +338,17 @@ def start():
         gutefrage = requests.get(f"https://www.gutefrage.net/nutzer/{usr}/fragen")
         if gutefrage.status_code == 200:
             print(Colors.light_green + 'Gutefrage'.center(70))
-            f.write(f"GUTEFRAGE           | hhttps://www.gutefrage.net/nutzer/{usr}/\n")
+            f.write(f"GUTEFRAGE           | https://www.gutefrage.net/nutzer/{usr}/\n")
+        else:
+            pass
+
+
+    def get_gumroad(): #https://kyliejenner.gumroad.com
+        os.system(f"title The Watcher ┃ Checking: Gumroad")
+        gumroad = requests.get(f"https://{usr}.gumroad.com")
+        if gumroad.status_code == 200:
+            print(Colors.light_green + 'Gumroad'.center(70))
+            f.write(f"GUMROAD             | https://{usr}.gumroad.com\n")
         else:
             pass
 
@@ -706,6 +716,7 @@ def start():
         get_gitbook()
         get_github()
         get_gutefrage()
+        get_gumroad()
         get_hacksterio()
         get_itchio()
         get_linktree()
