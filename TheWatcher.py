@@ -532,6 +532,16 @@ def start():
             pass
 
 
+    def get_tenor(): #https://tenor.com/users/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Tenor")
+        tenor = requests.get(f"https://tenor.com/users/{usr}")
+        if tenor.status_code == 200:
+            print(Colors.light_green + 'Tenor'.center(70))
+            f.write(f"TENOR               | https://tenor.com/users/{usr}\n")
+        else:
+            pass
+
+
     def get_tiktok_user(): #https://www.tiktok.com/@kyliejenner
         os.system(f"title The Watcher ┃ Checking: TikTok @")
         tiktok = requests.get(f"https://www.tiktok.com/@{usr}/")
@@ -686,6 +696,7 @@ def start():
         get_snapchat()
         get_sourceforge()
         get_spotify()
+        get_tenor()
         get_tiktok_hastag()
         get_tiktok_user()
         get_tradingview()

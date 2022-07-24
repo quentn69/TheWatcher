@@ -81,6 +81,7 @@ Quora
 SnapChat
 SourceForge
 Spotify
+Tenor
 TikTok #
 TikTok @
 Tradingview
