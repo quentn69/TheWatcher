@@ -29,7 +29,6 @@ import os
 import random
 import datetime
 import requests
-import webbrowser
 from time import *
 from pystyle import Colors, Colorate
 
