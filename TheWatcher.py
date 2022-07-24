@@ -132,6 +132,16 @@ def start():
             pass
 
 
+    def get_blogspot(): #https://kyliejenner.blogspot.com/
+        os.system(f"title The Watcher ┃ Checking: Blogspot")
+        blogspot = requests.get(f"https://www.behance.net/{usr}/")
+        if blogspot.status_code == 200:
+            print(Colors.light_green + 'Blogspot'.center(70))
+            f.write(f"BLOGSPOT            | https://www.behance.net/{usr}/\n")
+        else:
+            pass
+
+
     def get_buzzfeed(): #https://www.buzzfeed.com/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Buzzfeed")
         buzzfeed = requests.get(f"https://www.buzzfeed.com/{usr}/")
@@ -476,6 +486,7 @@ def start():
         get_appledeveloper()
         get_asciicinema()
         get_behance()
+        get_blogspot()
         get_buzzfeed()
         get_chess()
         get_crunchyroll()
