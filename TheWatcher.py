@@ -169,7 +169,27 @@ def start():
             print(Colors.light_green + 'MCPEDL'.center(70))
             f.write(f"MCPEDL         | https://mcpedl.com/user/{usr}/\n")
         else:
-            pass  
+            pass
+
+
+    def get_mojang(): #https://api.mojang.com/users/profiles/minecraft/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Mojang")
+        mojang = requests.get(f"https://api.mojang.com/users/profiles/minecraft/{usr}")
+        if mojang.status_code == 200:
+            print(Colors.light_green + 'Mojang'.center(70))
+            f.write(f"MOJANG         | https://api.mojang.com/users/profiles/minecraft/{usr}\n")
+        else:
+            pass
+
+
+    def get_osu(): #https://osu.ppy.sh/users/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: osu!")
+        osu = requests.get(f"https://osu.ppy.sh/users/{usr}")
+        if osu.status_code == 200:
+            print(Colors.light_green + 'osu!'.center(70))
+            f.write(f"osu!           | https://osu.ppy.sh/users/{usr}\n")
+        else:
+            pass
 
 
     def get_openstreetmap(): #https://www.openstreetmap.org/user/kyliejenner
@@ -240,7 +260,7 @@ def start():
             f.write(f"TIKTOK #       | https://www.tiktok.com/tag/{usr}/\n")
         else:
             pass
-    
+
 
     def get_wattpad(): #https://www.wattpad.com/user/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Wattpad")
@@ -320,6 +340,8 @@ def start():
         get_gutefrage()
         get_linktree()
         get_mcpedl()
+        get_mojang()
+        get_osu()
         get_openstreetmap()
         get_pastebin()
         get_quora()

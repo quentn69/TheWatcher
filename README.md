@@ -46,6 +46,8 @@ GitHub
 Gutefrage
 Linktree
 MCPEDL
+Mojang
+osu!
 OpenStreetMap
 Pastebin
 Quora
