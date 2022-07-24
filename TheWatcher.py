@@ -473,6 +473,15 @@ def start():
             pass
 
 
+    def get_patreon(): #https://www.patreon.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Patreon")
+        patreon = requests.get(f"https://www.patreon.com/{usr}")
+        if patreon.status_code == 200:
+            print(Colors.light_green + 'Patreon'.center(70))
+            f.write(f"PATREON             | https://www.patreon.com/{usr}\n")
+        else:
+            pass   
+
     def get_pypi(): #https://pypi.org/user/kyliejenner/
         os.system(f"title The Watcher ┃ Checking: PyPi")
         pypi = requests.get(f"https://pypi.org/user/{usr}/")
@@ -671,6 +680,7 @@ def start():
         get_openstreetmap()
         get_osu()
         get_pastebin()
+        get_patreon()
         get_pypi()
         get_quora()
         get_snapchat()

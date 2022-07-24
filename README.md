@@ -75,6 +75,7 @@ Note.com
 OpenStreetMap
 osu!
 Pastebin
+Patreon
 PyPi
 Quora
 SnapChat
