@@ -73,12 +73,32 @@ def start():
             pass
 
 
+    def get_7cups(): #https://www.7cups.com/@kyliejenner
+        os.system(f"title The Watcher ┃ Checking: 7Cups")
+        sevencups = requests.get(f"https://www.7cups.com/@{usr}")
+        if sevencups.status_code == 200:
+            print(Colors.light_green + '7Cups'.center(70))
+            f.write(f"7CUPS               | https://www.7cups.com/@{usr}\n")
+        else:
+            pass  
+
+
     def get_aboutme(): #https://about.me/kyliejenner
         os.system(f"title The Watcher ┃ Checking: about.me")
         about_me = requests.get(f"https://www.about.me/{usr}/")
         if about_me.status_code == 200:
             print(Colors.light_green + 'about.me'.center(70))
             f.write(f"ABOUT.ME            | https://www.about.me/{usr}/\n")
+        else:
+            pass
+
+
+    def get_academia(): #https://independent.academia.edu/KylieKenner
+        os.system(f"title The Watcher ┃ Checking: Academia")
+        academia = requests.get(f"https://independent.academia.edu/{usr}/")
+        if academia.status_code == 200:
+            print(Colors.light_green + 'Academia'.center(70))
+            f.write(f"ACADEMIA            | https://independent.academia.edu/{usr}/\n")
         else:
             pass
 
@@ -209,6 +229,16 @@ def start():
         if eyeem.status_code == 200:
             print(Colors.light_green + 'Eyeem'.center(70))
             f.write(f"EYEEM               | https://www.eyeem.com/u/{usr}\n")
+        else:
+            pass
+
+
+    def get_f3cool(): #https://f3.cool/kyliejenner/
+        os.system(f"title The Watcher ┃ Checking: F3.cool")
+        f3cool = requests.get(f"https://f3.cool/{usr}/")
+        if f3cool.status_code == 200:
+            print(Colors.light_green + 'F3.cool'.center(70))
+            f.write(f"F3.COOL             | https://f3.cool/{usr}/\n")
         else:
             pass
 
@@ -511,7 +541,9 @@ def start():
         f.write(f"===== @{usr} =====\n{whatdatiming}\n\n")
 
         get_9gag()
+        get_7cups()
         get_aboutme()
+        get_academia()
         get_allmylinks()
         get_askfm()
         get_appledeveloper()
@@ -525,6 +557,7 @@ def start():
         get_discordio()
         get_deviantart()
         get_eyeem()
+        get_f3cool()
         get_flipboard()
         get_geniusartist()
         get_geniususer()
