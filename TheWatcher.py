@@ -368,7 +368,7 @@ def start():
         mastodonsocial = requests.get(f"https://mastodon.social/@{usr}")
         if mastodonsocial.status_code == 200:
             print(Colors.light_green + 'Mastodon.social'.center(70))
-            f.write(f"MASTODON.SOCIAL      | https://mastodon.social/@{usr}\n")
+            f.write(f"MASTODON.SOCIAL     | https://mastodon.social/@{usr}\n")
         else:
             pass
 
