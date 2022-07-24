@@ -57,7 +57,7 @@ Znaplink
 
 ## Contact me
 --- 
-Add me on Discord: quentn#6969
+quentn#6969
 <br>
 
 --- 
