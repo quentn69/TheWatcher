@@ -137,7 +137,7 @@ def start():
         chess = requests.get(f"https://www.chess.com/member/{usr}")
         if chess.status_code == 200:
             print(Colors.light_green + 'Chess'.center(70))
-            f.write(f"CHESS              | https://www.chess.com/member/{usr}\n")
+            f.write(f"CHESS               | https://www.chess.com/member/{usr}\n")
         else:
             pass
 
@@ -257,7 +257,7 @@ def start():
         myanimelist = requests.get(f"https://myanimelist.net/profile/{usr}")
         if myanimelist.status_code == 200:
             print(Colors.light_green + 'MyAnimeList'.center(70))
-            f.write(f"MYANIMELIST        | https://myanimelist.net/profile/{usr}\n")
+            f.write(f"MYANIMELIST         | https://myanimelist.net/profile/{usr}\n")
         else:
             pass
 
@@ -337,7 +337,7 @@ def start():
         sourceforge = requests.get(f"https://sourceforge.net/u/{usr}/profile/")
         if sourceforge.status_code == 200:
             print(Colors.light_green + 'SourceForge'.center(70))
-            f.write(f"SOURCEFORGE          | https://sourceforge.net/u/{usr}/profile/\n")
+            f.write(f"SOURCEFORGE         | https://sourceforge.net/u/{usr}/profile/\n")
         else:
             pass
 
@@ -508,7 +508,7 @@ def start():
     end_input = input()
     if end_input == "q" or "Q":
         os.popen(f"{os.getcwd()}/checked_accounts/{folder_name.upper()}/{usr}.txt")
-        input()
+        start()
     else:
         start()
     start()
