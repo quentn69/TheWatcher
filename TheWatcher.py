@@ -502,6 +502,16 @@ def start():
             pass
 
 
+    def get_replit(): #https://replit.com/@kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Repl.it")
+        replit = requests.get(f"https://replit.com/@{usr}")
+        if replit.status_code == 200:
+            print(Colors.light_green + 'Repl.it'.center(70))
+            f.write(f"REPL.IT             | https://replit.com/@{usr}\n")
+        else:
+            pass
+
+
     def get_snapchat(): #https://www.snapchat.com/add/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Snapchat")
         snapchat = requests.get(f"https://www.snapchat.com/add/{usr}/")
@@ -693,6 +703,7 @@ def start():
         get_patreon()
         get_pypi()
         get_quora()
+        get_replit()
         get_snapchat()
         get_sourceforge()
         get_spotify()
