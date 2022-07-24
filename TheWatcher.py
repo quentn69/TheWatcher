@@ -42,7 +42,9 @@ banner = f'''
 '''
 
 os.system(f"title The Watcher ┃ Checking for Internet... | mode 70, 40")
-print(Colors.orange + "Trying to get internet connection. This could take a few seconds.")
+print(Colorate.Horizontal(Colors.yellow_to_red, banner, 1))
+print(Colors.orange + "Trying to get internet connection. This could take a few seconds.".center(70))
+print(Colors.white + "━"*70)
 try:
     requests.get("https://github.com/quentn69/TheWatcher")
     connection = True
@@ -66,7 +68,7 @@ def start():
         ninegag = requests.get(f"https://9gag.com/u/{usr}")
         if ninegag.status_code == 200:
             print(Colors.light_green + '9gag'.center(70))
-            f.write(f"9GAG           | hhttps://9gag.com/u/{usr}\n")
+            f.write(f"9GAG           | https://9gag.com/u/{usr}\n")
         else:
             pass
 
@@ -192,20 +194,20 @@ def start():
 
     def get_quora(): #https://www.quora.com/profile/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Quora")
-        quora = requests.get(f"https://www.quora.com/profile/{usr}")
+        quora = requests.get(f"https://www.quora.com/profile/{usr}/")
         if quora.status_code == 200:
             print(Colors.light_green + 'Quora'.center(70))
-            f.write(f"QUORA          | https://www.quora.com/profile/{usr}\n")
+            f.write(f"QUORA          | https://www.quora.com/profile/{usr}/\n")
         else:
             pass
 
 
     def get_spotify(): #https://open.spotify.com/user/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Spotify")
-        spotify = requests.get(f"https://open.spotify.com/user/{usr}")
+        spotify = requests.get(f"https://open.spotify.com/user/{usr}/")
         if spotify.status_code == 200:
             print(Colors.light_green + 'Spotify'.center(70))
-            f.write(f"SPOTIFY        | https://open.spotify.com/user/{usr}\n")
+            f.write(f"SPOTIFY        | https://open.spotify.com/user/{usr}/\n")
         else:
             pass
 
@@ -232,40 +234,40 @@ def start():
 
     def get_tiktok_hastag(): #https://www.tiktok.com/tag/kyliejenner
         os.system(f"title The Watcher ┃ Checking: TikTok (Hashtag)")
-        tiktok = requests.get(f"https://www.tiktok.com/tag/{usr}")
+        tiktok = requests.get(f"https://www.tiktok.com/tag/{usr}/")
         if tiktok.status_code == 200:
             print(Colors.light_green + 'TikTok (Hashtag)'.center(70))
-            f.write(f"TIKTOK HASHTAG | https://www.tiktok.com/tag/{usr}\n")
+            f.write(f"TIKTOK HASHTAG | https://www.tiktok.com/tag/{usr}/\n")
         else:
             pass
     
 
     def get_wattpad(): #https://www.wattpad.com/user/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Wattpad")
-        wattpad = requests.get(f"https://www.wattpad.com/user/{usr}")
+        wattpad = requests.get(f"https://www.wattpad.com/user/{usr}/")
         if wattpad.status_code == 200:
             print(Colors.light_green + 'Wattpad'.center(70))
-            f.write(f"WATTPAD        | https://www.wattpad.com/user/{usr}\n")
+            f.write(f"WATTPAD        | https://www.wattpad.com/user/{usr}/\n")
         else:
             pass
 
 
     def get_yahooauthor(): #https://www.yahoo.com/author/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Yahoo")
-        yahoo = requests.get(f"https://www.yahoo.com/author/{usr}")
+        yahoo = requests.get(f"https://www.yahoo.com/author/{usr}/")
         if yahoo.status_code == 200:
             print(Colors.light_green + 'Yahoo (Author)'.center(70))
-            f.write(f"YAHOO AUTHOR   | https://www.yahoo.com/author/{usr}\n")
+            f.write(f"YAHOO AUTHOR   | https://www.yahoo.com/author/{usr}/\n")
         else:
             pass
 
 
     def get_znaplink (): #https://znap.link/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Znaplink")
-        znaplink = requests.get(f"https://znap.link/{usr}")
+        znaplink = requests.get(f"https://znap.link/{usr}/")
         if znaplink.status_code == 200:
             print(Colors.light_green + 'Znaplink'.center(70))
-            f.write(f"ZNAPLINK       | https://znap.link/{usr}\n")
+            f.write(f"ZNAPLINK       | https://znap.link/{usr}/\n")
         else:
             pass
 
