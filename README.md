@@ -69,6 +69,7 @@ MyAnimeList
 MyMiniFactory
 Newgrounds
 NotABug.org
+Note.com
 OpenStreetMap
 osu!
 Pastebin

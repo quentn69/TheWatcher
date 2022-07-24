@@ -413,6 +413,16 @@ def start():
             pass
 
 
+    def get_notecom(): #https://note.com/kyliejenner/
+        os.system(f"title The Watcher ┃ Checking: Note.com")
+        notecom = requests.get(f"https://note.com/{usr}/")
+        if notecom.status_code == 200:
+            print(Colors.light_green + 'Note.com'.center(70))
+            f.write(f"NOTE.COM            | https://note.com/{usr}/\n")
+        else:
+            pass
+
+
     def get_osu(): #https://osu.ppy.sh/users/kyliejenner
         os.system(f"title The Watcher ┃ Checking: osu!")
         osu = requests.get(f"https://osu.ppy.sh/users/{usr}")
@@ -635,6 +645,7 @@ def start():
         get_myminifactory()
         get_newgrounds()
         get_notabugorg()
+        get_notecom()
         get_openstreetmap()
         get_osu()
         get_pastebin()
