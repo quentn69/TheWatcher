@@ -223,21 +223,21 @@ def start():
 
 
     def get_tiktok_user(): #https://www.tiktok.com/@kyliejenner
-        os.system(f"title The Watcher ┃ Checking: TikTok (User)")
+        os.system(f"title The Watcher ┃ Checking: TikTok @")
         tiktok = requests.get(f"https://www.tiktok.com/@{usr}/")
         if tiktok.status_code == 200:
-            print(Colors.light_green + 'TikTok (User)'.center(70))
-            f.write(f"TIKTOK USER    | https://www.tiktok.com/@{usr}/\n")
+            print(Colors.light_green + 'TikTok @'.center(70))
+            f.write(f"TIKTOK @       | https://www.tiktok.com/@{usr}/\n")
         else:
             pass
 
 
     def get_tiktok_hastag(): #https://www.tiktok.com/tag/kyliejenner
-        os.system(f"title The Watcher ┃ Checking: TikTok (Hashtag)")
+        os.system(f"title The Watcher ┃ Checking: TikTok #")
         tiktok = requests.get(f"https://www.tiktok.com/tag/{usr}/")
         if tiktok.status_code == 200:
-            print(Colors.light_green + 'TikTok (Hashtag)'.center(70))
-            f.write(f"TIKTOK HASHTAG | https://www.tiktok.com/tag/{usr}/\n")
+            print(Colors.light_green + 'TikTok #'.center(70))
+            f.write(f"TIKTOK #       | https://www.tiktok.com/tag/{usr}/\n")
         else:
             pass
     
@@ -290,8 +290,11 @@ def start():
         print("Press ENTER to restart.".center(70))
         input()
         start()
-
-    folder_name = usr[0]
+        
+    try:
+        folder_name = usr[0]
+    except:
+        start()
     d = datetime.datetime.now()
     whatdatiming = d.strftime("%A, %w. %B")
     directory_check = os.path.exists(os.getcwd() + "/checked_accounts")
