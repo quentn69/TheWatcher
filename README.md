@@ -62,6 +62,7 @@ GitBook
 GitHub
 GuteFrage
 Hackster.io
+itch.io
 Linktree
 Mastodon.cloud
 Mastodon.social

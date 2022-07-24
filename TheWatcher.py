@@ -343,6 +343,15 @@ def start():
             pass
 
 
+    def get_itchio(): #https://itch.io/profile/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Itch.io")
+        itchio = requests.get(f"https://itch.io/profile/{usr}")
+        if itchio.status_code == 200:
+            print(Colors.light_green + 'Itch.io'.center(70))
+            f.write(f"ITCH.IO             | https://itch.io/profile/{usr}\n")
+        else:
+            pass
+
     def get_linktree(): #https://linktr.ee/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Linktree")
         linktree = requests.get(f"https://www.linktr.ee/{usr}/")
@@ -687,6 +696,7 @@ def start():
         get_github()
         get_gutefrage()
         get_hacksterio()
+        get_itchio()
         get_linktree()
         get_mastodoncloud()
         get_mastodonsocial()
