@@ -15,7 +15,7 @@ Finds a specific username - At incredible speed!
 
 ## Preview
 
-<p align="center"><img src="https://user-images.githubusercontent.com/107768845/180644122-4b3bdc11-eaee-4a90-9e8d-2063fa8653bd.png", width="400", height="400"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/107768845/180644122-4b3bdc11-eaee-4a90-9e8d-2063fa8653bd.png", width="600", height="400"></p>
 
 ## Tutorial 
 
