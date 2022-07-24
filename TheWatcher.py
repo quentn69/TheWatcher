@@ -274,6 +274,15 @@ def start():
             pass
 
 
+    def get_geocaching(): #https://www.geocaching.com/p/default.aspx?u=kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Geocaching")
+        geocaching = requests.get(f"https://www.geocaching.com/p/default.aspx?u={usr}")
+        if geocaching.status_code == 200:
+            print(Colors.light_green + 'Geocaching'.center(70))
+            f.write(f"GEOCACHING          | https://www.geocaching.com/p/default.aspx?u={usr}\n")
+        else:
+            pass
+
     def get_giphy(): #https://giphy.com/explore/timmywag/
         os.system(f"title The Watcher ┃ Checking: Giphy")
         giphy = requests.get(f"https://giphy.com/explore/{usr}/")
@@ -310,6 +319,16 @@ def start():
         if gutefrage.status_code == 200:
             print(Colors.light_green + 'Gutefrage'.center(70))
             f.write(f"GUTEFRAGE           | hhttps://www.gutefrage.net/nutzer/{usr}/\n")
+        else:
+            pass
+
+
+    def get_hacksterio(): #https://www.hackster.io/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Hackster.io")
+        hacksterio = requests.get(f"https://www.hackster.io/{usr}")
+        if hacksterio.status_code == 200:
+            print(Colors.light_green + 'Hackster.io'.center(70))
+            f.write(f"HACKSTER.IO         | https://www.hackster.io/{usr}\n")
         else:
             pass
 
@@ -572,10 +591,12 @@ def start():
         get_f3cool()
         get_geniusartist()
         get_geniususer()
+        get_geocaching()
         get_giphy()
         get_gitbook()
         get_github()
         get_gutefrage()
+        get_hacksterio()
         get_linktree()
         get_mcpedl()
         get_mojang()
