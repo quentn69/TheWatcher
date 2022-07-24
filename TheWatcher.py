@@ -383,12 +383,32 @@ def start():
             pass
 
 
+    def get_myminifactory(): #https://www.myminifactory.com/users/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: MyMiniFactory")
+        myminifactory = requests.get(f"https://www.myminifactory.com/users/{usr}")
+        if myminifactory.status_code == 200:
+            print(Colors.light_green + 'MyMiniFactory'.center(70))
+            f.write(f"MYMINIFACTORY       | https://www.myminifactory.com/users/{usr}\n")
+        else:
+            pass
+
+
     def get_newgrounds(): #https://kyliejenner.newgrounds.com
         os.system(f"title The Watcher ┃ Checking: Newgrounds")
         newgrounds = requests.get(f"https://{usr}.newgrounds.com")
         if newgrounds.status_code == 200:
             print(Colors.light_green + 'Newgrounds'.center(70))
             f.write(f"NEWGROUNDS          | https://{usr}.newgrounds.com\n")
+        else:
+            pass
+
+
+    def get_notabugorg(): #https://notabug.org/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: NotABug.org")
+        notabugorg = requests.get(f"https://notabug.org/{usr}")
+        if notabugorg.status_code == 200:
+            print(Colors.light_green + 'NotABug.org'.center(70))
+            f.write(f"NOTABUG.ORG         | https://notabug.org/{usr}\n")
         else:
             pass
 
@@ -612,7 +632,9 @@ def start():
         get_mcpedl()
         get_mojang()
         get_myanimelist()
+        get_myminifactory()
         get_newgrounds()
+        get_notabugorg()
         get_openstreetmap()
         get_osu()
         get_pastebin()

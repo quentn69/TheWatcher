@@ -66,7 +66,9 @@ Linktree
 MCPEDL
 Mojang
 MyAnimeList
+MyMiniFactory
 Newgrounds
+NotABug.org
 OpenStreetMap
 osu!
 Pastebin
