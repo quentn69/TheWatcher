@@ -353,6 +353,26 @@ def start():
             pass
 
 
+    def get_mastodoncloud(): #https://mastodon.cloud/@kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Mastodon.cloud")
+        mastodoncloud = requests.get(f"https://mastodon.cloud/@{usr}")
+        if mastodoncloud.status_code == 200:
+            print(Colors.light_green + 'Mastodon.cloud'.center(70))
+            f.write(f"MASTODON.CLOUD      | https://mastodon.cloud/@{usr}\n")
+        else:
+            pass
+
+
+    def get_mastodonsocial(): #https://mastodon.social/@kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Mastodon.social")
+        mastodonsocial = requests.get(f"https://mastodon.social/@{usr}")
+        if mastodonsocial.status_code == 200:
+            print(Colors.light_green + 'Mastodon.social'.center(70))
+            f.write(f"MASTODON.social      | https://mastodon.social/@{usr}\n")
+        else:
+            pass
+
+
     def get_mcpedl(): #https://mcpedl.com/user/kyliejenner/
         os.system(f"title The Watcher ┃ Checking: MCPEDL")
         mcpedl = requests.get(f"https://mcpedl.com/user/{usr}/")
@@ -639,6 +659,8 @@ def start():
         get_gutefrage()
         get_hacksterio()
         get_linktree()
+        get_mastodoncloud()
+        get_mastodonsocial()
         get_mcpedl()
         get_mojang()
         get_myanimelist()

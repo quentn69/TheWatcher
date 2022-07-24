@@ -63,6 +63,8 @@ GitHub
 GuteFrage
 Hackster.io
 Linktree
+Mastodon.cloud
+Mastodon.social
 MCPEDL
 Mojang
 MyAnimeList
