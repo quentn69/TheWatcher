@@ -122,6 +122,7 @@ def start():
         else:
             pass    
 
+
     def get_behance(): #https://www.behance.net/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Behance")
         behance = requests.get(f"https://www.behance.net/{usr}/")
@@ -138,6 +139,16 @@ def start():
         if blogspot.status_code == 200:
             print(Colors.light_green + 'Blogspot'.center(70))
             f.write(f"BLOGSPOT            | https://www.behance.net/{usr}/\n")
+        else:
+            pass
+
+    
+    def get_bookcrossing(): #https://www.bookcrossing.com/mybookshelf/kyliejenner/
+        os.system(f"title The Watcher ┃ Checking: BookCrossing")
+        bookcrossing = requests.get(f"https://www.bookcrossing.com/mybookshelf/{usr}/")
+        if bookcrossing.status_code == 200:
+            print(Colors.light_green + 'BookCrossing'.center(70))
+            f.write(f"BOOKCROSSING        | https://www.bookcrossing.com/mybookshelf/{usr}/\n")
         else:
             pass
 
@@ -188,6 +199,16 @@ def start():
         if deviantart.status_code == 200:
             print(Colors.light_green + 'DeviantArt'.center(70))
             f.write(f"DEVIANTART          | https://www.deviantart.com/{usr}\n")
+        else:
+            pass
+
+
+    def get_flipboard(): #https://flipboard.com/@kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Flipboard")
+        flipboard = requests.get(f"https://flipboard.com/@{usr}")
+        if flipboard.status_code == 200:
+            print(Colors.light_green + 'Flipboard'.center(70))
+            f.write(f"FLIPBOARD           | https://flipboard.com/@{usr}\n")
         else:
             pass
 
@@ -487,11 +508,13 @@ def start():
         get_asciicinema()
         get_behance()
         get_blogspot()
+        get_bookcrossing()
         get_buzzfeed()
         get_chess()
         get_crunchyroll()
         get_discordio()
         get_deviantart()
+        get_flipboard()
         get_geniusartist()
         get_geniususer()
         get_gitbook()
@@ -530,7 +553,6 @@ def start():
     end_input = input()
     if end_input == "q" or "Q":
         os.popen(f"{os.getcwd()}/checked_accounts/{folder_name.upper()}/{usr}.txt")
-        start()
     else:
         start()
     start()
