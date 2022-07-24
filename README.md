@@ -10,6 +10,8 @@ Finds a specific username - At incredible speed!
 <p align="center">Please remember that this is a new project. If you have an idea or an error, open an issue.</p>
 
 ---
+<br>
+<br>
 
 ## Preview
 
