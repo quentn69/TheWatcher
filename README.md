@@ -55,7 +55,6 @@ Eyeem
 F3.cool
 Flipboard
 Genius (Artist)
-Genius (User)
 GitBook
 GitHub
 GuteFrage

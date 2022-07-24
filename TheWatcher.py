@@ -263,16 +263,6 @@ def start():
             pass
 
 
-    def get_geniususer(): #https://genius.com/kyliejenner
-        os.system(f"title The Watcher ┃ Checking: Genius (User)")
-        geniususer = requests.get(f"https://genius.com/{usr}")
-        if geniususer.status_code == 200:
-            print(Colors.light_green + 'Genius User'.center(70))
-            f.write(f"GENIUS USER         | https://genius.com/{usr}\n")
-        else:
-            pass
-
-
     def get_gitbook(): #https://kyliejenner.gitbook.io/project/
         os.system(f"title The Watcher ┃ Checking: GitBook")
         geniususer = requests.get(f"https://{usr}.gitbook.io/project/")
@@ -560,7 +550,6 @@ def start():
         get_f3cool()
         get_flipboard()
         get_geniusartist()
-        get_geniususer()
         get_gitbook()
         get_github()
         get_gutefrage()
