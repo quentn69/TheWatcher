@@ -272,7 +272,7 @@ def start():
 
 
     if connection == True:
-        epic_sentences = ["Knowledge is power.", "See everything.", "(Epic sentence here)"]
+        epic_sentences = ["Knowledge is power", "See everything", "(Cool and epic sentence here)"]
         epic_sentence = random.choice(epic_sentences)
         os.system(f"title The Watcher ┃ Welcome | mode 70, 40")
         print(Colorate.Horizontal(Colors.red_to_blue, banner, 1))
