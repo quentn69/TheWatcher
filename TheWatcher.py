@@ -339,7 +339,8 @@ def start():
     print(str(Colors.white + "              Q   | " + Colors.light_green + "Open created file"))
     end_input = input()
     if end_input == "q" or "Q":
-        os.popen(os.getcwd() + f"/checked_accounts/{folder_name.upper()}")
+        os.popen(f"{os.getcwd()}/checked_accounts/{folder_name.upper()}/{usr}.txt")
+        input()
     else:
         start()
     start()
