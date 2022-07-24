@@ -234,6 +234,16 @@ def start():
             pass
 
 
+    def get_dribbble(): #https://dribbble.com/kyliejenner/about
+        os.system(f"title The Watcher ┃ Checking: Dribbble")
+        dribbble = requests.get(f"https://dribbble.com/{usr}/about")
+        if dribbble.status_code == 200:
+            print(Colors.light_green + 'Dribbble'.center(70))
+            f.write(f"DRIBBBLE            | https://dribbble.com/{usr}/about\n")
+        else:
+            pass        
+
+
     def get_ebay(): #https://www.ebay.de/str/brandstown24
         os.system(f"title The Watcher ┃ Checking: Ebay")
         ebay = requests.get(f"https://www.ebay.de/str/{usr}")
@@ -685,6 +695,7 @@ def start():
         get_crunchyroll()
         get_deviantart()
         get_discordio()
+        get_dribbble()
         get_ebay()
         get_eyeem()
         get_f3cool()
