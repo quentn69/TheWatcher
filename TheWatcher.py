@@ -41,19 +41,19 @@ banner = f'''
 {" ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝    ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝".center(70)}
 '''
 
-os.system(f"title The Watcher ┃ Checking for Internet... | mode 70, 40")
-print(Colorate.Horizontal(Colors.yellow_to_red, banner, 1))
-print(Colors.orange + "Trying to get internet connection. This could take a few seconds.".center(70))
-print(Colors.white + "━"*70)
-try:
-    requests.get("https://github.com/quentn69/TheWatcher")
-    connection = True
-except:
-    connection = False
-    pass
-
 
 def start():
+    os.system(f"title The Watcher ┃ Checking for Internet... | mode 70, 40")
+    print(Colorate.Horizontal(Colors.yellow_to_red, banner, 1))
+    print(Colors.orange + "Trying to get internet connection. This could take a few seconds.".center(70))
+    print(Colors.white + "━"*70)
+    try:
+        requests.get("https://github.com/quentn69/TheWatcher")
+        connection = True
+    except:
+        connection = False
+        pass
+
     system = os.name
     if system == 'nt':
         os.system('cls')
