@@ -611,6 +611,16 @@ def start():
             pass
 
 
+    def get_twitch(): #https://www.twitch.tv/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Twitch")
+        twitch = requests.get(f"https://www.twitch.tv/{usr}")
+        if '''<!DOCTYPE html><html class="tw-root--hover"><head><meta charset="utf-8"><title>Twitch</title><meta property='og:site_name' content='Twitch'><meta property='og:title' ''' in twitch.text:
+            pass
+        else:
+            print(Colors.light_green + 'Twitch'.center(70))
+            f.write(f"TWITCH              | https://www.twitch.com/{usr}/\n")
+
+
     def get_wattpad(): #https://www.wattpad.com/user/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Wattpad")
         wattpad = requests.get(f"https://www.wattpad.com/user/{usr}/")
@@ -743,6 +753,7 @@ def start():
         get_tiktok_hastag()
         get_tiktok_user()
         get_tradingview()
+        get_twitch()
         get_wattpad()
         get_wordpressuser()
         get_yahooauthor()
