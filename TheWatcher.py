@@ -582,11 +582,13 @@ def start():
 
 
     def get_tiktok_user(): #https://www.tiktok.com/@kyliejenner
-        os.system(f"title The Watcher ┃ Checking: TikTok @")
-        tiktok = requests.get(f"https://www.tiktok.com/@{usr}/")
-        if tiktok.status_code == 200:
-            print(Colors.light_green + 'TikTok @'.center(70))
-            f.write(f"TIKTOK @            | https://www.tiktok.com/@{usr}/\n")
+        session = requests.Session()
+        c = session.get(f'https://www.tiktok.com/@{usr}', headers={'User-Agent': 'TikTok 17.4.0 rv:17 (iPhone; iOS 13.6.1; sv_SE) Cronet', 'Connection': 'keep-alive', }, timeout=60)
+        status = c.status_code
+
+        if status == 200 or 204:
+            print(Colors.green + "TikTok @".center(70))
+        
         else:
             pass
 
