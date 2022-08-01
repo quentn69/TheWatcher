@@ -89,7 +89,6 @@ Tenor
 TikTok #
 TikTok @
 Tradingview
-Twitch
 Wattpad
 Wordpress (User)
 Yahoo (Author)
