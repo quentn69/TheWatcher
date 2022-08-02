@@ -326,10 +326,20 @@ def start():
 
     def get_github(): #https://github.com/kyliejenner5
         os.system(f"title The Watcher ┃ Checking: Github")
-        github = requests.get(f"https://www.github.com/{usr}/")
+        github = requests.get(f"https://www.github.com/{usr}")
         if github.status_code == 200:
             print(Colors.light_green + 'GitHub'.center(70))
-            f.write(f"GITHUB              | https://www.github.com/{usr}/\n")
+            f.write(f"GITHUB              | https://www.github.com/{usr}\n")
+        else:
+            pass
+
+
+    def get_gravatar(): #http://en.gravatar.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Gravatar")
+        gravatar = requests.get(f"http://en.gravatar.com/{usr}")
+        if gravatar.status_code == 200:
+            print(Colors.light_green + 'Gravatar'.center(70))
+            f.write(f"GRAVATAR            | http://en.gravatar.com/{usr}\n")
         else:
             pass
 
@@ -718,6 +728,7 @@ def start():
         threading.Thread(target=get_giphy()).start()
         threading.Thread(target=get_gitbook()).start()
         threading.Thread(target=get_github()).start()
+        threading.Thread(target=get_gravatar()).start()
         threading.Thread(target=get_gutefrage()).start()
         threading.Thread(target=get_hacksterio()).start()
         threading.Thread(target=get_itchio()).start()
