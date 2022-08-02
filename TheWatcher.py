@@ -606,10 +606,20 @@ def start():
 
     def get_tradingview(): #https://www.tradingview.com/u/kyliejenner/
         os.system(f"title The Watcher ┃ Checking: Tradingview")
-        tradingview = requests.get(f"https://www.tradingview.com/u/{usr}/")
+        tradingview = requests.get(f"https://www.tradingview.com/u/{usr}")
         if tradingview.status_code == 200:
             print(Colors.light_green + 'Tradingview'.center(70))
-            f.write(f"TRADINGVIEW         | https://www.tradingview.com/u/{usr}/\n")
+            f.write(f"TRADINGVIEW         | https://www.tradingview.com/u/{usr}\n")
+        else:
+            pass
+
+
+    def get_tryhackme(): #https://tryhackme.com/p/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: TryHackMe")
+        tryhackme = requests.get(f"https://tryhackme.com/p/{usr}")
+        if tryhackme.status_code == 200:
+            print(Colors.light_green + 'TryHackMe'.center(70))
+            f.write(f"TRYHACKME           | https://tryhackme.com/p/{usr}\n")
         else:
             pass
 
@@ -621,7 +631,7 @@ def start():
             pass
         else:
             print(Colors.light_green + 'Twitch'.center(70))
-            f.write(f"TWITCH              | https://www.twitch.com/{usr}/\n")
+            f.write(f"TWITCH              | https://www.twitch.com/{usr}\n")
 
 
     def get_wattpad(): #https://www.wattpad.com/user/kyliejenner
@@ -629,7 +639,7 @@ def start():
         wattpad = requests.get(f"https://www.wattpad.com/user/{usr}/")
         if wattpad.status_code == 200:
             print(Colors.light_green + 'Wattpad'.center(70))
-            f.write(f"WATTPAD             | https://www.wattpad.com/user/{usr}/\n")
+            f.write(f"WATTPAD             | https://www.wattpad.com/user/{usr}\n")
         else:
             pass
 
@@ -756,6 +766,7 @@ def start():
         threading.Thread(target=get_tiktok_hastag()).start()
         threading.Thread(target=get_tiktok_user()).start()
         threading.Thread(target=get_tradingview()).start()
+        threading.Thread(target=get_tryhackme()).start()
         threading.Thread(target=get_twitch()).start()
         threading.Thread(target=get_wattpad()).start()
         threading.Thread(target=get_wordpressuser()).start()
