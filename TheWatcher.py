@@ -500,7 +500,8 @@ def start():
             print(Colors.light_green + 'Patreon'.center(70))
             f.write(f"PATREON             | https://www.patreon.com/{usr}\n")
         else:
-            pass   
+            pass
+
 
     def get_pypi(): #https://pypi.org/user/kyliejenner/
         os.system(f"title The Watcher ┃ Checking: PyPi")
