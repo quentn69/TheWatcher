@@ -49,7 +49,6 @@ Behance
 Blogspot
 BookCrossing
 Buzzfeed
-BuyMeACoffee
 Chess
 Crunchyroll
 Deviantart
