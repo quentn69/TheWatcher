@@ -155,6 +155,16 @@ def start():
             pass    
 
 
+    def get_audiojungle(): #https://audiojungle.net/user/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Audiojungle")
+        audiojungle = requests.get(f"https://audiojungle.net/user/{usr}")
+        if audiojungle.status_code == 200:
+            print(Colors.light_green + 'Audiojungle'.center(70))
+            f.write(f"AUDIOJUNGLE         | https://audiojungle.net/user/{usr}\n")
+        else:
+            pass
+
+
     def get_behance(): #https://www.behance.net/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Behance")
         behance = requests.get(f"https://www.behance.net/{usr}/")
@@ -760,6 +770,7 @@ def start():
         threading.Thread(target=get_arduino()).start()
         threading.Thread(target=get_asciicinema()).start()
         threading.Thread(target=get_askfm()).start()
+        threading.Thread(target=get_audiojungle()).start()
         threading.Thread(target=get_behance()).start()
         threading.Thread(target=get_blogspot()).start()
         threading.Thread(target=get_bookcrossing()).start()
