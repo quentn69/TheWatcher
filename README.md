@@ -4,6 +4,7 @@
 Finds a specific username - At incredible speed! 
 ```
 
+<p align="center">Don't forget to ⭐ this repository!</p>
 <br>
 
 
