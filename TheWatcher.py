@@ -255,6 +255,16 @@ def start():
             pass
 
 
+    def get_eintracht(): #https://community.eintracht.de/fans/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Eintracht")
+        eintracht = requests.get(f"https://community.eintracht.de/fans/{usr}")
+        if eintracht.status_code == 200:
+            print(Colors.light_green + 'Eintracht'.center(70))
+            f.write(f"EINTRACHT           | https://community.eintracht.de/fans/{usr}\n")
+        else:
+            pass    
+
+
     def get_eyeem(): #https://www.eyeem.com/u/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Eyeem")
         eyeem = requests.get(f"https://www.eyeem.com/u/{usr}")
@@ -750,6 +760,7 @@ def start():
         threading.Thread(target=get_discordio()).start()
         threading.Thread(target=get_dribbble()).start()
         threading.Thread(target=get_ebay()).start()
+        threading.Thread(target=get_eintracht()).start()
         threading.Thread(target=get_eyeem()).start()
         threading.Thread(target=get_f3cool()).start()
         threading.Thread(target=get_geniusartist()).start()
