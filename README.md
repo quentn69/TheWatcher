@@ -62,7 +62,6 @@ Geocaching
 GitBook
 GitHub
 GuteFrage
-Gumroad
 Hackster.io
 itch.io
 Linktree
@@ -81,6 +80,7 @@ Pastebin
 Patreon
 PyPi
 Quora
+Reddit
 Repl.it
 SnapChat
 SourceForge
