@@ -242,7 +242,7 @@ def start():
             print(Colors.light_green + 'Dribbble'.center(70))
             f.write(f"DRIBBBLE            | https://dribbble.com/{usr}/about\n")
         else:
-            pass        
+            pass
 
 
     def get_ebay(): #https://www.ebay.de/str/brandstown24
