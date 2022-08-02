@@ -187,10 +187,20 @@ def start():
 
     def get_buzzfeed(): #https://www.buzzfeed.com/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Buzzfeed")
-        buzzfeed = requests.get(f"https://www.buzzfeed.com/{usr}/")
+        buzzfeed = requests.get(f"https://www.buzzfeed.com/{usr}")
         if buzzfeed.status_code == 200:
             print(Colors.light_green + 'Buzzfeed'.center(70))
-            f.write(f"BUZZFEED            | https://www.buzzfeed.com/{usr}/\n")
+            f.write(f"BUZZFEED            | https://www.buzzfeed.com/{usr}\n")
+        else:
+            pass
+
+
+    def get_buymeacoffee(): #https://www.buymeacoffee.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: BuyMeACoffee")
+        buymeacoffee = requests.get(f"https://www.buymeacoffee.com/{usr}")
+        if buymeacoffee.status_code == 200:
+            print(Colors.light_green + 'BuyMeACoffee'.center(70))
+            f.write(f"BUYMEACOFFEE        | https://www.buymeacoffee.com/{usr}\n")
         else:
             pass
 
@@ -764,6 +774,7 @@ def start():
         threading.Thread(target=get_blogspot()).start()
         threading.Thread(target=get_bookcrossing()).start()
         threading.Thread(target=get_buzzfeed()).start()
+        threading.Thread(target=get_buymeacoffee()).start()
         threading.Thread(target=get_chess()).start()
         threading.Thread(target=get_crunchyroll()).start()
         threading.Thread(target=get_deviantart()).start()
