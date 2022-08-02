@@ -644,6 +644,16 @@ def start():
             f.write(f"TWITCH              | https://www.twitch.com/{usr}\n")
 
 
+    def get_vsco(): #https://vsco.co/kyliejenner/gallery
+        os.system(f"title The Watcher ┃ Checking: VSCO")
+        vsco = requests.get(f"https://vsco.co/{usr}/gallery")
+        if vsco.status_code == 200:
+            print(Colors.light_green + 'VSCO'.center(70))
+            f.write(f"VSCO                | https://vsco.co/{usr}/gallery\n")
+        else:
+            pass
+
+
     def get_wattpad(): #https://www.wattpad.com/user/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Wattpad")
         wattpad = requests.get(f"https://www.wattpad.com/user/{usr}/")
@@ -779,6 +789,7 @@ def start():
         threading.Thread(target=get_tradingview()).start()
         threading.Thread(target=get_tryhackme()).start()
         threading.Thread(target=get_twitch()).start()
+        threading.Thread(target=get_vsco()).start()
         threading.Thread(target=get_wattpad()).start()
         threading.Thread(target=get_wordpressuser()).start()
         threading.Thread(target=get_yahooauthor()).start()
