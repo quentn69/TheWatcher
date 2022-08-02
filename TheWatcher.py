@@ -277,10 +277,20 @@ def start():
 
     def get_f3cool(): #https://f3.cool/kyliejenner/
         os.system(f"title The Watcher ┃ Checking: F3.cool")
-        f3cool = requests.get(f"https://f3.cool/{usr}/")
+        f3cool = requests.get(f"https://f3.cool/{usr}")
         if f3cool.status_code == 200:
             print(Colors.light_green + 'F3.cool'.center(70))
-            f.write(f"F3.COOL             | https://f3.cool/{usr}/\n")
+            f.write(f"F3.COOL             | https://f3.cool/{usr}\n")
+        else:
+            pass
+
+
+    def get_flightradar24(): #https://my.flightradar24.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Flightradar24")
+        flightradar24 = requests.get(f"https://my.flightradar24.com/{usr}")
+        if flightradar24.status_code == 200:
+            print(Colors.light_green + 'Flightradar24'.center(70))
+            f.write(f"FLIGHTRADAR24       | https://my.flightradar24.com/{usr}\n")
         else:
             pass
 
@@ -763,6 +773,7 @@ def start():
         threading.Thread(target=get_eintracht()).start()
         threading.Thread(target=get_eyeem()).start()
         threading.Thread(target=get_f3cool()).start()
+        threading.Thread(target=get_flightradar24()).start()
         threading.Thread(target=get_geniusartist()).start()
         threading.Thread(target=get_geniususer()).start()
         threading.Thread(target=get_geocaching()).start()
