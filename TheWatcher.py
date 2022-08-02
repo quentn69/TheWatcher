@@ -465,10 +465,20 @@ def start():
 
     def get_notecom(): #https://note.com/kyliejenner/
         os.system(f"title The Watcher ┃ Checking: Note.com")
-        notecom = requests.get(f"https://note.com/{usr}/")
+        notecom = requests.get(f"https://note.com/{usr}")
         if notecom.status_code == 200:
             print(Colors.light_green + 'Note.com'.center(70))
-            f.write(f"NOTE.COM            | https://note.com/{usr}/\n")
+            f.write(f"NOTE.COM            | https://note.com/{usr}\n")
+        else:
+            pass
+
+
+    def get_npm(): #https://www.npmjs.com/~kyliejenner
+        os.system(f"title The Watcher ┃ Checking: npm")
+        npm = requests.get(f"https://www.npmjs.com/~{usr}")
+        if npm.status_code == 200:
+            print(Colors.light_green + 'npm'.center(70))
+            f.write(f"NPM                 | https://www.npmjs.com/~{usr}\n")
         else:
             pass
 
@@ -752,6 +762,7 @@ def start():
         threading.Thread(target=get_newgrounds()).start()
         threading.Thread(target=get_notabugorg()).start()
         threading.Thread(target=get_notecom()).start()
+        threading.Thread(target=get_npm()).start()
         threading.Thread(target=get_openstreetmap()).start()
         threading.Thread(target=get_osu()).start()
         threading.Thread(target=get_pastebin()).start()
