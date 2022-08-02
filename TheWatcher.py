@@ -475,12 +475,12 @@ def start():
 
     def get_openstreetmap(): #https://www.openstreetmap.org/user/kyliejenner
         os.system(f"title The Watcher ┃ Checking: OpenStreetMap")
-        openstreetmap = requests.get(f"https://www.openstreetmap.org/user/{usr}/")
+        openstreetmap = requests.get(f"https://www.openstreetmap.org/user/{usr}")
         if openstreetmap.status_code == 200:
             print(Colors.light_green + 'OpenStreetMap'.center(70))
-            f.write(f"OPENSTREETMAP       | https://www.openstreetmap.org/user/{usr}/\n")
+            f.write(f"OPENSTREETMAP       | https://www.openstreetmap.org/user/{usr}\n")
         else:
-            pass  
+            pass
 
 
     def get_pastebin(): #https://pastebin.com/u/kyliejenner
