@@ -522,15 +522,6 @@ def start():
             pass
 
 
-    def get_reddit(): #https://www.reddit.com/user/kyliejenner
-        os.system(f"title The Watcher ┃ Checking: Reddit")
-        twitch = requests.get(f"https://www.reddit.com/user/{usr}")
-        if f'''<div class="_3Im6OD67aKo33nql4FpSp_"><div class="_8AZ553JgDTNn5ZUmBdXkR"></div><div class="_2TuF8LuTZGoynMOwiccrRC"><a href="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_7.png" rel="noopener nofollow ugc" target="_blank"><div class="_2p14AQvJBvTrEEa4csiW9v _1lxVpLf3223Gve3gRhbG-R"><img alt="Benutzeravatar" class="_2TN8dEgAQbSyKntWpSPYM7 _3Y33QReHCnUZm9ewFAsk8C" src="https://www.redditstatic.com/avatars/defaults/v2/avatar_default_7.png"></div></a></div><a class="_1LCAhi_8JjayVo7pJ0KIh0" href="/user/{usr}/">u/{usr}</a><div class="bVfceI5F_twrnRcVO1328"></div><div class="_3odBTM7RqvRgN1nvkf5k8B"><div class="_2fN55zgax6VM7DyEl9pOmM"><h5 class="_26kBTuLE_sSZzRBwU7HLij">Karma</h5><div class="_3KNaG9-PoXf4gcuy5_RCVy"><i class="_2fopwfsUIdZKFtFUEsud9r icon icon-karma_fill"></i><span id="profile--id-card--highlight-tooltip--karma" class="_1hNyZSklmcC7R_IfCUcXmZ">1</span></div></div>''' in twitch.text:
-            pass
-        else:
-            print(Colors.light_green + 'Reddit'.center(70))
-            f.write(f"REDDIT              | https://www.reddit.com/user/{usr}/\n")
-
     def get_replit(): #https://replit.com/@kyliejenner
         os.system(f"title The Watcher ┃ Checking: Repl.it")
         replit = requests.get(f"https://replit.com/@{usr}")
@@ -587,6 +578,7 @@ def start():
         status = c.status_code
         if status == 200 or 204:
             print(Colors.green + "TikTok @".center(70))
+            f.write(f"TIKTOK              | https://www.quora.com/profile/{usr}/\n")
         else:
             pass
 
@@ -744,7 +736,6 @@ def start():
         threading.Thread(target=get_patreon()).start()
         threading.Thread(target=get_pypi()).start()
         threading.Thread(target=get_quora()).start()
-        threading.Thread(target=get_reddit()).start()
         threading.Thread(target=get_replit()).start()
         threading.Thread(target=get_snapchat()).start()
         threading.Thread(target=get_sourceforge()).start()
