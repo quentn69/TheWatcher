@@ -714,16 +714,6 @@ def start():
             pass
 
 
-    def get_znaplink (): #https://znap.link/kyliejenner
-        os.system(f"title The Watcher ┃ Checking: Znaplink")
-        znaplink = requests.get(f"https://znap.link/{usr}/")
-        if znaplink.status_code == 200:
-            print(Colors.light_green + 'Znaplink'.center(70))
-            f.write(f"ZNAPLINK            | https://znap.link/{usr}/\n")
-        else:
-            pass
-
-
     if connection == True:
         epic_sentences = ["Knowledge is power", "See everything", "(Cool and epic sentence here)"]
         epic_sentence = random.choice(epic_sentences)
@@ -826,7 +816,6 @@ def start():
         threading.Thread(target=get_wattpad()).start()
         threading.Thread(target=get_wordpressuser()).start()
         threading.Thread(target=get_yahooauthor()).start()
-        threading.Thread(target=get_znaplink()).start()
 
         f.write("\n\nmade by github.com/quentn69 | https://github.com/quentn69/TheWatcher")
 

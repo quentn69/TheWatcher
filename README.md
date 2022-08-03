@@ -101,7 +101,6 @@ VSCO
 Wattpad
 Wordpress (User)
 Yahoo (Author)
-Znaplink
 ```
 
 <br>
@@ -116,5 +115,3 @@ quentn#6969
 <br>
 <p align="center">This program is for educational purposes only!</p>
 <p align="center">It's not sponsored or affiliated by Marvel.</p>
-
-
