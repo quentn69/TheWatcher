@@ -64,6 +64,7 @@ Genius (Artist)
 Genius (User)
 Geocaching
 GitBook
+Gitee
 GitHub
 Gradle
 Gravatar

@@ -356,10 +356,20 @@ def start():
 
     def get_gitbook(): #https://kyliejenner.gitbook.io/project/
         os.system(f"title The Watcher ┃ Checking: GitBook")
-        gitbook = requests.get(f"https://{usr}.gitbook.io/project/")
+        gitbook = requests.get(f"https://{usr}.gitbook.io/project")
         if gitbook.status_code == 200:
             print(Colors.light_green + 'GitBook'.center(70))
-            f.write(f"GITBOOK             | https://{usr}.gitbook.io/project/\n")
+            f.write(f"GITBOOK             | https://{usr}.gitbook.io/project\n")
+        else:
+            pass
+
+
+    def get_gitee(): #https://gitee.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Gitee")
+        gitee = requests.get(f"https://gitee.com/{usr}")
+        if gitee.status_code == 200:
+            print(Colors.light_green + 'Gitee'.center(70))
+            f.write(f"GITEE               | https://gitee.com/{usr}\n")
         else:
             pass
 
@@ -820,6 +830,7 @@ def start():
         threading.Thread(target=get_geocaching()).start()
         threading.Thread(target=get_giphy()).start()
         threading.Thread(target=get_gitbook()).start()
+        threading.Thread(target=get_gitee()).start()
         threading.Thread(target=get_github()).start()
         threading.Thread(target=get_gradle()).start()
         threading.Thread(target=get_gravatar()).start()
