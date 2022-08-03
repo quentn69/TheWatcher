@@ -424,6 +424,16 @@ def start():
             pass
 
 
+    def get_irecommend(): #https://irecommend.ru/users/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: iRecommend")
+        irecommend = requests.get(f"https://irecommend.ru/users/{usr}")
+        if irecommend.status_code == 200:
+            print(Colors.light_green + 'iRecommend'.center(70))
+            f.write(f"IRECOMMEND          | https://irecommend.ru/users/{usr}\n")
+        else:
+            pass
+
+
     def get_itchio(): #https://itch.io/profile/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Itch.io")
         itchio = requests.get(f"https://itch.io/profile/{usr}")
@@ -836,6 +846,7 @@ def start():
         threading.Thread(target=get_gravatar()).start()
         threading.Thread(target=get_gutefrage()).start()
         threading.Thread(target=get_hacksterio()).start()
+        threading.Thread(target=get_irecommend()).start()
         threading.Thread(target=get_itchio()).start()
         threading.Thread(target=get_linktree()).start()
         threading.Thread(target=get_mastodoncloud()).start()
