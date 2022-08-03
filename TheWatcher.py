@@ -165,6 +165,16 @@ def start():
             pass
 
 
+    def get_awn(): #https://www.awn.com/user/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: AWN")
+        awn = requests.get(f"https://www.awn.com/user/{usr}")
+        if awn.status_code == 200:
+            print(Colors.light_green + 'AWN'.center(70))
+            f.write(f"AWN                 | https://www.awn.com/user/{usr}\n")
+        else:
+            pass
+
+
     def get_behance(): #https://www.behance.net/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Behance")
         behance = requests.get(f"https://www.behance.net/{usr}/")
@@ -217,10 +227,20 @@ def start():
     
     def get_crunchyroll(): #https://www.crunchyroll.com/user/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Crunchyroll")
-        crunchyroll = requests.get(f"https://www.crunchyroll.com/user/{usr}/")
+        crunchyroll = requests.get(f"https://www.crunchyroll.com/user/{usr}")
         if crunchyroll.status_code == 200:
             print(Colors.light_green + 'Crunchyroll'.center(70))
-            f.write(f"CRUNCHYROLL         | https://www.crunchyroll.com/user/{usr}/\n")
+            f.write(f"CRUNCHYROLL         | https://www.crunchyroll.com/user/{usr}\n")
+        else:
+            pass
+
+
+    def get_dailymotion(): #https://www.dailymotion.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Dailymotion")
+        dailymotion = requests.get(f"https://www.dailymotion.com/{usr}")
+        if dailymotion.status_code == 200:
+            print(Colors.light_green + 'Dailymotion'.center(70))
+            f.write(f"DAILYMOTION         | https://www.dailymotion.com/{usr}\n")
         else:
             pass
 
@@ -573,6 +593,16 @@ def start():
             pass
 
 
+    def get_redbubble(): #https://www.redbubble.com/de/people/kyliejenner/shop
+        os.system(f"title The Watcher ┃ Checking: Redbubble")
+        redbubble = requests.get(f"https://www.redbubble.com/de/people/{usr}/shop")
+        if redbubble.status_code == 200:
+            print(Colors.light_green + 'Redbubble'.center(70))
+            f.write(f"REDBUBBLE           | https://www.redbubble.com/de/people/{usr}\n")
+        else:
+            pass
+
+
     def get_replit(): #https://replit.com/@kyliejenner
         os.system(f"title The Watcher ┃ Checking: Repl.it")
         replit = requests.get(f"https://replit.com/@{usr}")
@@ -585,30 +615,40 @@ def start():
 
     def get_snapchat(): #https://www.snapchat.com/add/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Snapchat")
-        snapchat = requests.get(f"https://www.snapchat.com/add/{usr}/")
+        snapchat = requests.get(f"https://www.snapchat.com/add/{usr}")
         if snapchat.status_code == 200:
             print(Colors.light_green + 'Snapchat'.center(70))
-            f.write(f"SNAPCHAT            | https://www.snapchat.com/add/{usr}/\n")
+            f.write(f"SNAPCHAT            | https://www.snapchat.com/add/{usr}\n")
         else:
             pass
 
 
     def get_sourceforge(): #https://sourceforge.net/u/kyliejenner/profile/
         os.system(f"title The Watcher ┃ Checking: SourceForge")
-        sourceforge = requests.get(f"https://sourceforge.net/u/{usr}/profile/")
+        sourceforge = requests.get(f"https://sourceforge.net/u/{usr}/profile")
         if sourceforge.status_code == 200:
             print(Colors.light_green + 'SourceForge'.center(70))
-            f.write(f"SOURCEFORGE         | https://sourceforge.net/u/{usr}/profile/\n")
+            f.write(f"SOURCEFORGE         | https://sourceforge.net/u/{usr}/profile\n")
         else:
             pass
 
 
     def get_spotify(): #https://open.spotify.com/user/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Spotify")
-        spotify = requests.get(f"https://open.spotify.com/user/{usr}/")
+        spotify = requests.get(f"https://open.spotify.com/user/{usr}")
         if spotify.status_code == 200:
             print(Colors.light_green + 'Spotify'.center(70))
-            f.write(f"SPOTIFY             | https://open.spotify.com/user/{usr}/\n")
+            f.write(f"SPOTIFY             | https://open.spotify.com/user/{usr}\n")
+        else:
+            pass
+
+
+    def get_tellonym(): #https://tellonym.me/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Tellonym")
+        tellonym = requests.get(f"https://tellonym.me/{usr}")
+        if tellonym.status_code == 200:
+            print(Colors.light_green + 'Tellonym'.center(70))
+            f.write(f"TELLONYM            | https://tellonym.me/{usr}\n")
         else:
             pass
 
@@ -750,7 +790,6 @@ def start():
         pass
     with open(f"{os.getcwd()}/checked_accounts/{folder_name.upper()}/{usr}.txt", "w") as f:
         f.write(f"===== @{usr} =====\n{whatdatiming}\n\n")
-
         threading.Thread(target=get_7cups()).start()
         threading.Thread(target=get_9gag()).start()
         threading.Thread(target=get_aboutme()).start()
@@ -761,12 +800,14 @@ def start():
         threading.Thread(target=get_asciicinema()).start()
         threading.Thread(target=get_askfm()).start()
         threading.Thread(target=get_audiojungle()).start()
+        threading.Thread(target=get_awn()).start()
         threading.Thread(target=get_behance()).start()
         threading.Thread(target=get_blogspot()).start()
         threading.Thread(target=get_bookcrossing()).start()
         threading.Thread(target=get_buzzfeed()).start()
         threading.Thread(target=get_chess()).start()
         threading.Thread(target=get_crunchyroll()).start()
+        threading.Thread(target=get_dailymotion()).start()
         threading.Thread(target=get_deviantart()).start()
         threading.Thread(target=get_discordio()).start()
         threading.Thread(target=get_dribbble()).start()
@@ -802,10 +843,12 @@ def start():
         threading.Thread(target=get_patreon()).start()
         threading.Thread(target=get_pypi()).start()
         threading.Thread(target=get_quora()).start()
+        threading.Thread(target=get_redbubble()).start()
         threading.Thread(target=get_replit()).start()
         threading.Thread(target=get_snapchat()).start()
         threading.Thread(target=get_sourceforge()).start()
         threading.Thread(target=get_spotify()).start()
+        threading.Thread(target=get_tellonym()).start()
         threading.Thread(target=get_tenor()).start()
         threading.Thread(target=get_tiktok_hastag()).start()
         threading.Thread(target=get_tiktok_user()).start()
@@ -816,7 +859,6 @@ def start():
         threading.Thread(target=get_wattpad()).start()
         threading.Thread(target=get_wordpressuser()).start()
         threading.Thread(target=get_yahooauthor()).start()
-
         f.write("\n\nmade by github.com/quentn69 | https://github.com/quentn69/TheWatcher")
 
     os.system(f"title The Watcher ┃ Finished")

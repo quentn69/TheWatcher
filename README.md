@@ -52,6 +52,7 @@ BookCrossing
 Buzzfeed
 Chess
 Crunchyroll
+Dailymotion
 Deviantart
 Discord.io
 Dribbble
@@ -86,6 +87,7 @@ Pastebin
 Patreon
 PyPi
 Quora
+Redbubble
 Reddit
 Repl.it
 SnapChat
