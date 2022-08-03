@@ -235,16 +235,6 @@ def start():
             pass
 
 
-    def get_dailymotion(): #https://www.dailymotion.com/kyliejenner
-        os.system(f"title The Watcher ┃ Checking: Dailymotion")
-        dailymotion = requests.get(f"https://www.dailymotion.com/{usr}")
-        if dailymotion.status_code == 200:
-            print(Colors.light_green + 'Dailymotion'.center(70))
-            f.write(f"DAILYMOTION         | https://www.dailymotion.com/{usr}\n")
-        else:
-            pass
-
-
     def get_deviantart(): #https://www.deviantart.com/kyliejenner
         os.system(f"title The Watcher ┃ Checking: DeviantArt")
         deviantart = requests.get(f"https://www.deviantart.com/{usr}")
@@ -380,6 +370,16 @@ def start():
         if github.status_code == 200:
             print(Colors.light_green + 'GitHub'.center(70))
             f.write(f"GITHUB              | https://www.github.com/{usr}\n")
+        else:
+            pass
+
+
+    def get_gradle(): #https://plugins.gradle.org/u/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Gradle")
+        gradle = requests.get(f"https://plugins.gradle.org/u/{usr}")
+        if gradle.status_code == 200:
+            print(Colors.light_green + 'Gradle'.center(70))
+            f.write(f"GRADLE              | https://plugins.gradle.org/u/{usr}\n")
         else:
             pass
 
@@ -807,7 +807,6 @@ def start():
         threading.Thread(target=get_buzzfeed()).start()
         threading.Thread(target=get_chess()).start()
         threading.Thread(target=get_crunchyroll()).start()
-        threading.Thread(target=get_dailymotion()).start()
         threading.Thread(target=get_deviantart()).start()
         threading.Thread(target=get_discordio()).start()
         threading.Thread(target=get_dribbble()).start()
@@ -822,6 +821,7 @@ def start():
         threading.Thread(target=get_giphy()).start()
         threading.Thread(target=get_gitbook()).start()
         threading.Thread(target=get_github()).start()
+        threading.Thread(target=get_gradle()).start()
         threading.Thread(target=get_gravatar()).start()
         threading.Thread(target=get_gutefrage()).start()
         threading.Thread(target=get_hacksterio()).start()

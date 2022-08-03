@@ -52,7 +52,6 @@ BookCrossing
 Buzzfeed
 Chess
 Crunchyroll
-Dailymotion
 Deviantart
 Discord.io
 Dribbble
@@ -66,6 +65,7 @@ Genius (User)
 Geocaching
 GitBook
 GitHub
+Gradle
 Gravatar
 GuteFrage
 Hackster.io
