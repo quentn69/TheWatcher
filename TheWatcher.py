@@ -553,6 +553,16 @@ def start():
             pass
 
 
+    def get_opensource(): #https://opensource.com/users/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Opensource")
+        opensource = requests.get(f"https://opensource.com/users/{usr}")
+        if opensource.status_code == 200:
+            print(Colors.light_green + 'Opensource'.center(70))
+            f.write(f"OPENSOURCE           | https://opensource.com/users/{usr}\n")
+        else:
+            pass
+
+
     def get_osu(): #https://osu.ppy.sh/users/kyliejenner
         os.system(f"title The Watcher ┃ Checking: osu!")
         osu = requests.get(f"https://osu.ppy.sh/users/{usr}")
@@ -734,6 +744,16 @@ def start():
             f.write(f"TWITCH              | https://www.twitch.com/{usr}\n")
 
 
+    def get_vk(): #https://vk.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: VK")
+        vk = requests.get(f"https://vk.com/{usr}")
+        if vk.status_code == 200:
+            print(Colors.light_green + 'VK'.center(70))
+            f.write(f"VK                  | https://vk.com/{usr}\n")
+        else:
+            pass
+
+
     def get_vsco(): #https://vsco.co/kyliejenner/gallery
         os.system(f"title The Watcher ┃ Checking: VSCO")
         vsco = requests.get(f"https://vsco.co/{usr}/gallery")
@@ -859,6 +879,7 @@ def start():
         threading.Thread(target=get_notabugorg()).start()
         threading.Thread(target=get_notecom()).start()
         threading.Thread(target=get_npm()).start()
+        threading.Thread(target=get_opensource()).start()
         threading.Thread(target=get_openstreetmap()).start()
         threading.Thread(target=get_osu()).start()
         threading.Thread(target=get_pastebin()).start()
@@ -877,6 +898,7 @@ def start():
         threading.Thread(target=get_tradingview()).start()
         threading.Thread(target=get_tryhackme()).start()
         threading.Thread(target=get_twitch()).start()
+        threading.Thread(target=get_vk()).start()
         threading.Thread(target=get_vsco()).start()
         threading.Thread(target=get_wattpad()).start()
         threading.Thread(target=get_wordpressuser()).start()
