@@ -673,6 +673,16 @@ def start():
             pass
 
 
+    def get_steamgroup(): #https://steamcommunity.com/groups/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Steam Groups")
+        steamgroup = requests.get(f"https://steamcommunity.com/groups/{usr}")
+        if '''<div id="mainContents">''' in steamgroup.text:
+            pass
+        else:
+            print(Colors.light_green + 'Steam Groups'.center(70))
+            f.write(f"STEAM GROUPS        | https://steamcommunity.com/groups/{usr}\n")
+
+
     def get_tellonym(): #https://tellonym.me/kyliejenner
         os.system(f"title The Watcher ┃ Checking: Tellonym")
         tellonym = requests.get(f"https://tellonym.me/{usr}")
@@ -891,6 +901,7 @@ def start():
         threading.Thread(target=get_snapchat()).start()
         threading.Thread(target=get_sourceforge()).start()
         threading.Thread(target=get_spotify()).start()
+        threading.Thread(target=get_steamgroup()).start()
         threading.Thread(target=get_tellonym()).start()
         threading.Thread(target=get_tenor()).start()
         threading.Thread(target=get_tiktok_hastag()).start()
