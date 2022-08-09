@@ -456,12 +456,22 @@ def start():
 
     def get_linktree(): #https://linktr.ee/
         os.system(f"title The Watcher ┃ Checking: Linktree")
-        linktree = requests.get(f"https://www.linktr.ee/{usr}/")
+        linktree = requests.get(f"https://www.linktr.ee/{usr}")
         if linktree.status_code == 200:
             print(Colors.light_green + 'Linktree'.center(70))
-            f.write(f"LINKTREE            | https://www.linktr.ee/{usr}/\n")
+            f.write(f"LINKTREE            | https://www.linktr.ee/{usr}\n")
         else:
             pass
+
+    
+    def get_mapify(): #https://de.mapify.travel/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Mapify")
+        mapify = requests.get(f"https://de.mapify.travel/{usr}")
+        if '''https://media.mapify.travel/assets/img/nothing-found.gif''' in mapify.text:
+            pass
+        else:
+            print(Colors.light_green + 'Mapify'.center(70))
+            f.write(f"MAPIFY              | https://de.mapify.travel/{usr}\n")
 
 
     def get_mastodoncloud(): #https://mastodon.cloud/@
@@ -921,6 +931,7 @@ def start():
         threading.Thread(target=get_irecommend()).start()
         threading.Thread(target=get_itchio()).start()
         threading.Thread(target=get_linktree()).start()
+        threading.Thread(target=get_mapify()).start()
         threading.Thread(target=get_mastodoncloud()).start()
         threading.Thread(target=get_mastodonsocial()).start()
         threading.Thread(target=get_mcpedl()).start()

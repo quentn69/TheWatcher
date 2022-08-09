@@ -74,6 +74,7 @@ Hackster.io
 iRecommend
 itch.io
 Linktree
+Mapify
 Mastodon.cloud
 Mastodon.social
 MCPEDL
