@@ -306,6 +306,16 @@ def start():
             pass
 
 
+    def get_facebook(): #<i class="mvl img sp_Awgqz7K4lHq sx_a37d90"></i>
+        os.system(f"title The Watcher ┃ Checking: Facebook")
+        facebook = requests.get(f"https://facebook.com/{usr}", allow_redirects=True)
+        if facebook.status_code == 200:
+            print(Colors.light_green + 'Facebook'.center(70))
+            f.write(f"FACEBOOK            | https://facebook.com/{usr}\n")
+        else:
+            pass
+
+
     def get_flightradar24(): #https://my.flightradar24.com/
         os.system(f"title The Watcher ┃ Checking: Flightradar24")
         flightradar24 = requests.get(f"https://my.flightradar24.com/{usr}")
@@ -885,6 +895,7 @@ def start():
         threading.Thread(target=get_eintracht()).start()
         threading.Thread(target=get_eyeem()).start()
         threading.Thread(target=get_f3cool()).start()
+        threading.Thread(target=get_facebook()).start()
         threading.Thread(target=get_flightradar24()).start()
         threading.Thread(target=get_geniusartist()).start()
         threading.Thread(target=get_geniususer()).start()
