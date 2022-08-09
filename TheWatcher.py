@@ -33,6 +33,7 @@ import threading
 from time import *
 from pystyle import Colors, Colorate
 
+
 banner = f'''
 {"██╗    ██╗ █████╗ ████████╗ ██████╗██╗  ██╗███████╗██████╗ ".center(70)}
 {"██║    ██║██╔══██╗╚══██╔══╝██╔════╝██║  ██║██╔════╝██╔══██╗".center(70)}
@@ -64,7 +65,7 @@ def start():
         print('\n'*150)
 
 
-    def get_9gag(): #https://9gag.com/u/kyliejenner
+    def get_9gag(): #https://9gag.com/u/
         os.system(f"title The Watcher ┃ Checking: 9GAG")
         ninegag = requests.get(f"https://9gag.com/u/{usr}")
         if ninegag.status_code == 200:
@@ -74,7 +75,7 @@ def start():
             pass
 
 
-    def get_7cups(): #https://www.7cups.com/@kyliejenner
+    def get_7cups(): #https://www.7cups.com/@
         os.system(f"title The Watcher ┃ Checking: 7Cups")
         sevencups = requests.get(f"https://www.7cups.com/@{usr}")
         if sevencups.status_code == 200:
@@ -84,7 +85,7 @@ def start():
             pass  
 
 
-    def get_aboutme(): #https://about.me/kyliejenner
+    def get_aboutme(): #https://about.me/
         os.system(f"title The Watcher ┃ Checking: about.me")
         about_me = requests.get(f"https://www.about.me/{usr}")
         if about_me.status_code == 200:
@@ -104,7 +105,7 @@ def start():
             pass
 
 
-    def get_allmylinks(): #https://allmylinks.com/kyliejenner
+    def get_allmylinks(): #https://allmylinks.com/
         os.system(f"title The Watcher ┃ Checking: AllMyLinks")
         allmylinks = requests.get(f"https://allmylinks.com/{usr}")
         if allmylinks.status_code == 200:
@@ -114,7 +115,7 @@ def start():
             pass
 
 
-    def get_appledeveloper(): #https://developer.apple.com/forums/profile/kyliejenner
+    def get_appledeveloper(): #https://developer.apple.com/forums/profile/
         os.system(f"title The Watcher ┃ Checking: Apple (Developer)")
         appledeveloper = requests.get(f"https://developer.apple.com/forums/profile/{usr}")
         if appledeveloper.status_code == 200:
@@ -124,7 +125,7 @@ def start():
             pass
 
 
-    def get_arduino(): #https://create.arduino.cc/projecthub/kyliejenner
+    def get_arduino(): #https://create.arduino.cc/projecthub/
         os.system(f"title The Watcher ┃ Checking: Arduino")
         arduino = requests.get(f"https://create.arduino.cc/projecthub/{usr}")
         if arduino.status_code == 200:
@@ -135,7 +136,7 @@ def start():
 
 
 
-    def get_asciicinema(): #https://asciinema.org/~kyliejenner
+    def get_asciicinema(): #https://asciinema.org/~
         os.system(f"title The Watcher ┃ Checking: Asciicinema")
         asciicinema = requests.get(f"https://asciinema.org/~{usr}")
         if asciicinema.status_code == 200:
@@ -145,7 +146,7 @@ def start():
             pass
 
 
-    def get_askfm(): #https://ask.fm/kyliejenner
+    def get_askfm(): #https://ask.fm/
         os.system(f"title The Watcher ┃ Checking: Ask.fm")
         askfm = requests.get(f"https://ask.fm/{usr}")
         if askfm.status_code == 200:
@@ -155,7 +156,7 @@ def start():
             pass    
 
 
-    def get_audiojungle(): #https://audiojungle.net/user/kyliejenner
+    def get_audiojungle(): #https://audiojungle.net/user/
         os.system(f"title The Watcher ┃ Checking: Audiojungle")
         audiojungle = requests.get(f"https://audiojungle.net/user/{usr}")
         if audiojungle.status_code == 200:
@@ -165,7 +166,7 @@ def start():
             pass
 
 
-    def get_awn(): #https://www.awn.com/user/kyliejenner
+    def get_awn(): #https://www.awn.com/user/
         os.system(f"title The Watcher ┃ Checking: AWN")
         awn = requests.get(f"https://www.awn.com/user/{usr}")
         if awn.status_code == 200:
@@ -175,7 +176,7 @@ def start():
             pass
 
 
-    def get_behance(): #https://www.behance.net/kyliejenner
+    def get_behance(): #https://www.behance.net/
         os.system(f"title The Watcher ┃ Checking: Behance")
         behance = requests.get(f"https://www.behance.net/{usr}/")
         if behance.status_code == 200:
@@ -185,7 +186,7 @@ def start():
             pass
 
 
-    def get_blogspot(): #https://kyliejenner.blogspot.com/
+    def get_blogspot(): #https://.blogspot.com/
         os.system(f"title The Watcher ┃ Checking: Blogspot")
         blogspot = requests.get(f"https://www.behance.net/{usr}/")
         if blogspot.status_code == 200:
@@ -195,7 +196,7 @@ def start():
             pass
 
     
-    def get_bookcrossing(): #https://www.bookcrossing.com/mybookshelf/kyliejenner/
+    def get_bookcrossing(): #https://www.bookcrossing.com/mybookshelf//
         os.system(f"title The Watcher ┃ Checking: BookCrossing")
         bookcrossing = requests.get(f"https://www.bookcrossing.com/mybookshelf/{usr}/")
         if bookcrossing.status_code == 200:
@@ -205,7 +206,7 @@ def start():
             pass
 
 
-    def get_buzzfeed(): #https://www.buzzfeed.com/kyliejenner
+    def get_buzzfeed(): #https://www.buzzfeed.com/
         os.system(f"title The Watcher ┃ Checking: Buzzfeed")
         buzzfeed = requests.get(f"https://www.buzzfeed.com/{usr}")
         if buzzfeed.status_code == 200:
@@ -215,7 +216,7 @@ def start():
             pass
 
 
-    def get_chess(): #https://www.chess.com/member/kyliejenner
+    def get_chess(): #https://www.chess.com/member/
         os.system(f"title The Watcher ┃ Checking: Chess")
         chess = requests.get(f"https://www.chess.com/member/{usr}")
         if chess.status_code == 200:
@@ -225,7 +226,7 @@ def start():
             pass
 
     
-    def get_crunchyroll(): #https://www.crunchyroll.com/user/kyliejenner
+    def get_crunchyroll(): #https://www.crunchyroll.com/user/
         os.system(f"title The Watcher ┃ Checking: Crunchyroll")
         crunchyroll = requests.get(f"https://www.crunchyroll.com/user/{usr}")
         if crunchyroll.status_code == 200:
@@ -235,7 +236,7 @@ def start():
             pass
 
 
-    def get_deviantart(): #https://www.deviantart.com/kyliejenner
+    def get_deviantart(): #https://www.deviantart.com/
         os.system(f"title The Watcher ┃ Checking: DeviantArt")
         deviantart = requests.get(f"https://www.deviantart.com/{usr}")
         if deviantart.status_code == 200:
@@ -245,7 +246,7 @@ def start():
             pass
 
 
-    def get_discordio(): #https://discord.io/kyliejenner/
+    def get_discordio(): #https://discord.io//
         os.system(f"title The Watcher ┃ Checking: Discord.io")
         discordio = requests.get(f"https://discord.io/{usr}/")
         if discordio.status_code == 200:
@@ -255,7 +256,7 @@ def start():
             pass
 
 
-    def get_dribbble(): #https://dribbble.com/kyliejenner/about
+    def get_dribbble(): #https://dribbble.com//about
         os.system(f"title The Watcher ┃ Checking: Dribbble")
         dribbble = requests.get(f"https://dribbble.com/{usr}/about")
         if dribbble.status_code == 200:
@@ -275,7 +276,7 @@ def start():
             pass
 
 
-    def get_eintracht(): #https://community.eintracht.de/fans/kyliejenner
+    def get_eintracht(): #https://community.eintracht.de/fans/
         os.system(f"title The Watcher ┃ Checking: Eintracht")
         eintracht = requests.get(f"https://community.eintracht.de/fans/{usr}")
         if eintracht.status_code == 200:
@@ -285,7 +286,7 @@ def start():
             pass    
 
 
-    def get_eyeem(): #https://www.eyeem.com/u/kyliejenner
+    def get_eyeem(): #https://www.eyeem.com/u/
         os.system(f"title The Watcher ┃ Checking: Eyeem")
         eyeem = requests.get(f"https://www.eyeem.com/u/{usr}")
         if eyeem.status_code == 200:
@@ -295,7 +296,7 @@ def start():
             pass
 
 
-    def get_f3cool(): #https://f3.cool/kyliejenner/
+    def get_f3cool(): #https://f3.cool//
         os.system(f"title The Watcher ┃ Checking: F3.cool")
         f3cool = requests.get(f"https://f3.cool/{usr}")
         if f3cool.status_code == 200:
@@ -305,7 +306,7 @@ def start():
             pass
 
 
-    def get_flightradar24(): #https://my.flightradar24.com/kyliejenner
+    def get_flightradar24(): #https://my.flightradar24.com/
         os.system(f"title The Watcher ┃ Checking: Flightradar24")
         flightradar24 = requests.get(f"https://my.flightradar24.com/{usr}")
         if flightradar24.status_code == 200:
@@ -315,7 +316,7 @@ def start():
             pass
 
 
-    def get_geniusartist(): #https://genius.com/artists/kyliejenner
+    def get_geniusartist(): #https://genius.com/artists/
         os.system(f"title The Watcher ┃ Checking: Genius (Artist)")
         geniusartist = requests.get(f"https://genius.com/artists/{usr}")
         if geniusartist.status_code == 200:
@@ -325,7 +326,7 @@ def start():
             pass
 
 
-    def get_geniususer(): #https://genius.com/kyliejenner
+    def get_geniususer(): #https://genius.com/
         os.system(f"title The Watcher ┃ Checking: Genius (User)")
         geniususer = requests.get(f"https://genius.com/{usr}")
         if geniususer.status_code == 200:
@@ -335,7 +336,7 @@ def start():
             pass
 
 
-    def get_geocaching(): #https://www.geocaching.com/p/default.aspx?u=kyliejenner
+    def get_geocaching(): #https://www.geocaching.com/p/default.aspx?u=
         os.system(f"title The Watcher ┃ Checking: Geocaching")
         geocaching = requests.get(f"https://www.geocaching.com/p/default.aspx?u={usr}")
         if geocaching.status_code == 200:
@@ -354,7 +355,7 @@ def start():
             pass
 
 
-    def get_gitbook(): #https://kyliejenner.gitbook.io/project/
+    def get_gitbook(): #https://.gitbook.io/project/
         os.system(f"title The Watcher ┃ Checking: GitBook")
         gitbook = requests.get(f"https://{usr}.gitbook.io/project")
         if gitbook.status_code == 200:
@@ -364,7 +365,7 @@ def start():
             pass
 
 
-    def get_gitee(): #https://gitee.com/kyliejenner
+    def get_gitee(): #https://gitee.com/
         os.system(f"title The Watcher ┃ Checking: Gitee")
         gitee = requests.get(f"https://gitee.com/{usr}")
         if gitee.status_code == 200:
@@ -374,7 +375,7 @@ def start():
             pass
 
 
-    def get_github(): #https://github.com/kyliejenner5
+    def get_github(): #https://github.com/5
         os.system(f"title The Watcher ┃ Checking: Github")
         github = requests.get(f"https://www.github.com/{usr}")
         if github.status_code == 200:
@@ -384,7 +385,7 @@ def start():
             pass
 
 
-    def get_gradle(): #https://plugins.gradle.org/u/kyliejenner
+    def get_gradle(): #https://plugins.gradle.org/u/
         os.system(f"title The Watcher ┃ Checking: Gradle")
         gradle = requests.get(f"https://plugins.gradle.org/u/{usr}")
         if gradle.status_code == 200:
@@ -394,7 +395,7 @@ def start():
             pass
 
 
-    def get_gravatar(): #http://en.gravatar.com/kyliejenner
+    def get_gravatar(): #http://en.gravatar.com/
         os.system(f"title The Watcher ┃ Checking: Gravatar")
         gravatar = requests.get(f"http://en.gravatar.com/{usr}")
         if gravatar.status_code == 200:
@@ -404,7 +405,7 @@ def start():
             pass
 
 
-    def get_gutefrage(): #https://www.gutefrage.net/nutzer/kyliejenner/fragen
+    def get_gutefrage(): #https://www.gutefrage.net/nutzer//fragen
         os.system(f"title The Watcher ┃ Checking: Gutefrage.net")
         gutefrage = requests.get(f"https://www.gutefrage.net/nutzer/{usr}/fragen")
         if gutefrage.status_code == 200:
@@ -414,7 +415,7 @@ def start():
             pass
 
 
-    def get_hacksterio(): #https://www.hackster.io/kyliejenner
+    def get_hacksterio(): #https://www.hackster.io/
         os.system(f"title The Watcher ┃ Checking: Hackster.io")
         hacksterio = requests.get(f"https://www.hackster.io/{usr}")
         if hacksterio.status_code == 200:
@@ -424,7 +425,7 @@ def start():
             pass
 
 
-    def get_irecommend(): #https://irecommend.ru/users/kyliejenner
+    def get_irecommend(): #https://irecommend.ru/users/
         os.system(f"title The Watcher ┃ Checking: iRecommend")
         irecommend = requests.get(f"https://irecommend.ru/users/{usr}")
         if irecommend.status_code == 200:
@@ -434,7 +435,7 @@ def start():
             pass
 
 
-    def get_itchio(): #https://itch.io/profile/kyliejenner
+    def get_itchio(): #https://itch.io/profile/
         os.system(f"title The Watcher ┃ Checking: Itch.io")
         itchio = requests.get(f"https://itch.io/profile/{usr}")
         if itchio.status_code == 200:
@@ -443,7 +444,7 @@ def start():
         else:
             pass
 
-    def get_linktree(): #https://linktr.ee/kyliejenner
+    def get_linktree(): #https://linktr.ee/
         os.system(f"title The Watcher ┃ Checking: Linktree")
         linktree = requests.get(f"https://www.linktr.ee/{usr}/")
         if linktree.status_code == 200:
@@ -453,7 +454,7 @@ def start():
             pass
 
 
-    def get_mastodoncloud(): #https://mastodon.cloud/@kyliejenner
+    def get_mastodoncloud(): #https://mastodon.cloud/@
         os.system(f"title The Watcher ┃ Checking: Mastodon.cloud")
         mastodoncloud = requests.get(f"https://mastodon.cloud/@{usr}")
         if mastodoncloud.status_code == 200:
@@ -463,7 +464,7 @@ def start():
             pass
 
 
-    def get_mastodonsocial(): #https://mastodon.social/@kyliejenner
+    def get_mastodonsocial(): #https://mastodon.social/@
         os.system(f"title The Watcher ┃ Checking: Mastodon.social")
         mastodonsocial = requests.get(f"https://mastodon.social/@{usr}")
         if mastodonsocial.status_code == 200:
@@ -473,7 +474,7 @@ def start():
             pass
 
 
-    def get_mcpedl(): #https://mcpedl.com/user/kyliejenner/
+    def get_mcpedl(): #https://mcpedl.com/user//
         os.system(f"title The Watcher ┃ Checking: MCPEDL")
         mcpedl = requests.get(f"https://mcpedl.com/user/{usr}/")
         if mcpedl.status_code == 200:
@@ -483,7 +484,7 @@ def start():
             pass
 
 
-    def get_mojang(): #https://api.mojang.com/users/profiles/minecraft/kyliejenner
+    def get_mojang(): #https://api.mojang.com/users/profiles/minecraft/
         os.system(f"title The Watcher ┃ Checking: Mojang")
         mojang = requests.get(f"https://api.mojang.com/users/profiles/minecraft/{usr}")
         if mojang.status_code == 200:
@@ -493,7 +494,7 @@ def start():
             pass
 
 
-    def get_myanimelist(): #https://myanimelist.net/profile/kyliejenner
+    def get_myanimelist(): #https://myanimelist.net/profile/
         os.system(f"title The Watcher ┃ Checking: MyAnimeList")
         myanimelist = requests.get(f"https://myanimelist.net/profile/{usr}")
         if myanimelist.status_code == 200:
@@ -503,7 +504,7 @@ def start():
             pass
 
 
-    def get_myminifactory(): #https://www.myminifactory.com/users/kyliejenner
+    def get_myminifactory(): #https://www.myminifactory.com/users/
         os.system(f"title The Watcher ┃ Checking: MyMiniFactory")
         myminifactory = requests.get(f"https://www.myminifactory.com/users/{usr}")
         if myminifactory.status_code == 200:
@@ -513,7 +514,7 @@ def start():
             pass
 
 
-    def get_newgrounds(): #https://kyliejenner.newgrounds.com
+    def get_newgrounds(): #https://.newgrounds.com
         os.system(f"title The Watcher ┃ Checking: Newgrounds")
         newgrounds = requests.get(f"https://{usr}.newgrounds.com")
         if newgrounds.status_code == 200:
@@ -523,7 +524,7 @@ def start():
             pass
 
 
-    def get_notabugorg(): #https://notabug.org/kyliejenner
+    def get_notabugorg(): #https://notabug.org/
         os.system(f"title The Watcher ┃ Checking: NotABug.org")
         notabugorg = requests.get(f"https://notabug.org/{usr}")
         if notabugorg.status_code == 200:
@@ -533,7 +534,7 @@ def start():
             pass
 
 
-    def get_notecom(): #https://note.com/kyliejenner/
+    def get_notecom(): #https://note.com//
         os.system(f"title The Watcher ┃ Checking: Note.com")
         notecom = requests.get(f"https://note.com/{usr}")
         if notecom.status_code == 200:
@@ -543,7 +544,7 @@ def start():
             pass
 
 
-    def get_npm(): #https://www.npmjs.com/~kyliejenner
+    def get_npm(): #https://www.npmjs.com/~
         os.system(f"title The Watcher ┃ Checking: npm")
         npm = requests.get(f"https://www.npmjs.com/~{usr}")
         if npm.status_code == 200:
@@ -553,7 +554,7 @@ def start():
             pass
 
 
-    def get_opensource(): #https://opensource.com/users/kyliejenner
+    def get_opensource(): #https://opensource.com/users/
         os.system(f"title The Watcher ┃ Checking: Opensource")
         opensource = requests.get(f"https://opensource.com/users/{usr}")
         if opensource.status_code == 200:
@@ -563,7 +564,7 @@ def start():
             pass
 
 
-    def get_osu(): #https://osu.ppy.sh/users/kyliejenner
+    def get_osu(): #https://osu.ppy.sh/users/
         os.system(f"title The Watcher ┃ Checking: osu!")
         osu = requests.get(f"https://osu.ppy.sh/users/{usr}")
         if osu.status_code == 200:
@@ -573,7 +574,7 @@ def start():
             pass
 
 
-    def get_openstreetmap(): #https://www.openstreetmap.org/user/kyliejenner
+    def get_openstreetmap(): #https://www.openstreetmap.org/user/
         os.system(f"title The Watcher ┃ Checking: OpenStreetMap")
         openstreetmap = requests.get(f"https://www.openstreetmap.org/user/{usr}")
         if openstreetmap.status_code == 200:
@@ -583,7 +584,7 @@ def start():
             pass
 
 
-    def get_pastebin(): #https://pastebin.com/u/kyliejenner
+    def get_pastebin(): #https://pastebin.com/u/
         os.system(f"title The Watcher ┃ Checking: Pastebin")
         patebin = requests.get(f"https://www.pastebin.com/u/{usr}/")
         if patebin.status_code == 200:
@@ -593,7 +594,7 @@ def start():
             pass
 
 
-    def get_patreon(): #https://www.patreon.com/kyliejenner
+    def get_patreon(): #https://www.patreon.com/
         os.system(f"title The Watcher ┃ Checking: Patreon")
         patreon = requests.get(f"https://www.patreon.com/{usr}")
         if patreon.status_code == 200:
@@ -603,7 +604,17 @@ def start():
             pass
 
 
-    def get_pypi(): #https://pypi.org/user/kyliejenner/
+    def get_pinterest(): #https://www.pinterest.com/
+        os.system(f"title The Watcher ┃ Checking: Pinterest")
+        pinterest = requests.get(f"https://www.pinterest.com/{usr}")
+        if f'''<span class="tBJ dyH iFc sAJ O2T zDA IZT swG">@{usr}</span>''' in pinterest.text:
+            print(Colors.light_green + 'Pinterest'.center(70))
+            f.write(f"PINTEREST           | https://www.pinterest.com/{usr}\n")
+        else:
+            pass
+
+
+    def get_pypi(): #https://pypi.org/user//
         os.system(f"title The Watcher ┃ Checking: PyPi")
         pypi = requests.get(f"https://pypi.org/user/{usr}/")
         if pypi.status_code == 200:
@@ -613,7 +624,7 @@ def start():
             pass
 
 
-    def get_quora(): #https://www.quora.com/profile/kyliejenner
+    def get_quora(): #https://www.quora.com/profile/
         os.system(f"title The Watcher ┃ Checking: Quora")
         quora = requests.get(f"https://www.quora.com/profile/{usr}/")
         if quora.status_code == 200:
@@ -623,7 +634,7 @@ def start():
             pass
 
 
-    def get_redbubble(): #https://www.redbubble.com/de/people/kyliejenner/shop
+    def get_redbubble(): #https://www.redbubble.com/de/people//shop
         os.system(f"title The Watcher ┃ Checking: Redbubble")
         redbubble = requests.get(f"https://www.redbubble.com/de/people/{usr}/shop")
         if redbubble.status_code == 200:
@@ -633,7 +644,7 @@ def start():
             pass
 
 
-    def get_replit(): #https://replit.com/@kyliejenner
+    def get_replit(): #https://replit.com/@
         os.system(f"title The Watcher ┃ Checking: Repl.it")
         replit = requests.get(f"https://replit.com/@{usr}")
         if replit.status_code == 200:
@@ -643,7 +654,7 @@ def start():
             pass
 
 
-    def get_snapchat(): #https://www.snapchat.com/add/kyliejenner
+    def get_snapchat(): #https://www.snapchat.com/add/
         os.system(f"title The Watcher ┃ Checking: Snapchat")
         snapchat = requests.get(f"https://www.snapchat.com/add/{usr}")
         if snapchat.status_code == 200:
@@ -653,7 +664,7 @@ def start():
             pass
 
 
-    def get_sourceforge(): #https://sourceforge.net/u/kyliejenner/profile/
+    def get_sourceforge(): #https://sourceforge.net/u//profile/
         os.system(f"title The Watcher ┃ Checking: SourceForge")
         sourceforge = requests.get(f"https://sourceforge.net/u/{usr}/profile")
         if sourceforge.status_code == 200:
@@ -663,7 +674,7 @@ def start():
             pass
 
 
-    def get_spotify(): #https://open.spotify.com/user/kyliejenner
+    def get_spotify(): #https://open.spotify.com/user/
         os.system(f"title The Watcher ┃ Checking: Spotify")
         spotify = requests.get(f"https://open.spotify.com/user/{usr}")
         if spotify.status_code == 200:
@@ -673,17 +684,27 @@ def start():
             pass
 
 
-    def get_steamgroup(): #https://steamcommunity.com/groups/kyliejenner
+    def get_steamgroup(): #https://steamcommunity.com/groups/
         os.system(f"title The Watcher ┃ Checking: Steam Groups")
         steamgroup = requests.get(f"https://steamcommunity.com/groups/{usr}")
-        if '''<div id="mainContents">''' in steamgroup.text:
+        if '''<p class="returnLink">''' in steamgroup.text:
             pass
         else:
             print(Colors.light_green + 'Steam Groups'.center(70))
             f.write(f"STEAM GROUPS        | https://steamcommunity.com/groups/{usr}\n")
 
 
-    def get_tellonym(): #https://tellonym.me/kyliejenner
+    def get_steamuser(): #https://steamcommunity.com/id/
+        os.system(f"title The Watcher ┃ Checking: Steam User")
+        steam = requests.get(f"https://steamcommunity.com/groups/{usr}")
+        if '''<p class="returnLink">''' in steam.text:
+            pass
+        else:
+            print(Colors.light_green + 'Steam User'.center(70))
+            f.write(f"STEAM USER          | https://steamcommunity.com/groups/{usr}\n")
+
+
+    def get_tellonym(): #https://tellonym.me/
         os.system(f"title The Watcher ┃ Checking: Tellonym")
         tellonym = requests.get(f"https://tellonym.me/{usr}")
         if tellonym.status_code == 200:
@@ -693,7 +714,7 @@ def start():
             pass
 
 
-    def get_tenor(): #https://tenor.com/users/kyliejenner
+    def get_tenor(): #https://tenor.com/users/
         os.system(f"title The Watcher ┃ Checking: Tenor")
         tenor = requests.get(f"https://tenor.com/users/{usr}")
         if tenor.status_code == 200:
@@ -703,7 +724,7 @@ def start():
             pass
 
 
-    def get_tiktok_user(): #https://www.tiktok.com/@kyliejenner
+    def get_tiktok_user(): #https://www.tiktok.com/@
         session = requests.Session()
         c = session.get(f'https://www.tiktok.com/@{usr}', headers={'User-Agent': 'TikTok 17.4.0 rv:17 (iPhone; iOS 13.6.1; sv_SE) Cronet', 'Connection': 'keep-alive', }, timeout=60)
         status = c.status_code
@@ -714,7 +735,7 @@ def start():
             pass
 
 
-    def get_tiktok_hastag(): #https://www.tiktok.com/tag/kyliejenner
+    def get_tiktok_hastag(): #https://www.tiktok.com/tag/
         os.system(f"title The Watcher ┃ Checking: TikTok #")
         tiktok = requests.get(f"https://www.tiktok.com/tag/{usr}/")
         if tiktok.status_code == 200:
@@ -724,7 +745,7 @@ def start():
             pass
 
 
-    def get_tradingview(): #https://www.tradingview.com/u/kyliejenner/
+    def get_tradingview(): #https://www.tradingview.com/u//
         os.system(f"title The Watcher ┃ Checking: Tradingview")
         tradingview = requests.get(f"https://www.tradingview.com/u/{usr}")
         if tradingview.status_code == 200:
@@ -734,7 +755,7 @@ def start():
             pass
 
 
-    def get_tryhackme(): #https://tryhackme.com/p/kyliejenner
+    def get_tryhackme(): #https://tryhackme.com/p/
         os.system(f"title The Watcher ┃ Checking: TryHackMe")
         tryhackme = requests.get(f"https://tryhackme.com/p/{usr}")
         if tryhackme.status_code == 200:
@@ -744,7 +765,7 @@ def start():
             pass
 
 
-    def get_twitch(): #https://www.twitch.tv/kyliejenner
+    def get_twitch(): #https://www.twitch.tv/
         os.system(f"title The Watcher ┃ Checking: Twitch")
         twitch = requests.get(f"https://www.twitch.tv/{usr}")
         if '''<!DOCTYPE html><html class="tw-root--hover"><head><meta charset="utf-8"><title>Twitch</title><meta property='og:site_name' content='Twitch'><meta property='og:title' ''' in twitch.text:
@@ -754,7 +775,7 @@ def start():
             f.write(f"TWITCH              | https://www.twitch.com/{usr}\n")
 
 
-    def get_vk(): #https://vk.com/kyliejenner
+    def get_vk(): #https://vk.com/
         os.system(f"title The Watcher ┃ Checking: VK")
         vk = requests.get(f"https://vk.com/{usr}")
         if vk.status_code == 200:
@@ -764,7 +785,7 @@ def start():
             pass
 
 
-    def get_vsco(): #https://vsco.co/kyliejenner/gallery
+    def get_vsco(): #https://vsco.co//gallery
         os.system(f"title The Watcher ┃ Checking: VSCO")
         vsco = requests.get(f"https://vsco.co/{usr}/gallery")
         if vsco.status_code == 200:
@@ -774,7 +795,7 @@ def start():
             pass
 
 
-    def get_wattpad(): #https://www.wattpad.com/user/kyliejenner
+    def get_wattpad(): #https://www.wattpad.com/user/
         os.system(f"title The Watcher ┃ Checking: Wattpad")
         wattpad = requests.get(f"https://www.wattpad.com/user/{usr}/")
         if wattpad.status_code == 200:
@@ -784,7 +805,7 @@ def start():
             pass
 
 
-    def get_wordpressuser(): #https://profiles.wordpress.org/kyliejenner/
+    def get_wordpressuser(): #https://profiles.wordpress.org//
         os.system(f"title The Watcher ┃ Checking: Wordpress @")
         wordpressuser = requests.get(f"https://profiles.wordpress.org/{usr}/")
         if wordpressuser.status_code == 200:
@@ -794,7 +815,7 @@ def start():
             pass
 
 
-    def get_yahooauthor(): #https://www.yahoo.com/author/kyliejenner
+    def get_yahooauthor(): #https://www.yahoo.com/author/
         os.system(f"title The Watcher ┃ Checking: Yahoo")
         yahoo = requests.get(f"https://www.yahoo.com/author/{usr}/")
         if yahoo.status_code == 200:
@@ -894,6 +915,7 @@ def start():
         threading.Thread(target=get_osu()).start()
         threading.Thread(target=get_pastebin()).start()
         threading.Thread(target=get_patreon()).start()
+        threading.Thread(target=get_pinterest()).start()
         threading.Thread(target=get_pypi()).start()
         threading.Thread(target=get_quora()).start()
         threading.Thread(target=get_redbubble()).start()
@@ -902,6 +924,7 @@ def start():
         threading.Thread(target=get_sourceforge()).start()
         threading.Thread(target=get_spotify()).start()
         threading.Thread(target=get_steamgroup()).start()
+        threading.Thread(target=get_steamuser()).start()
         threading.Thread(target=get_tellonym()).start()
         threading.Thread(target=get_tenor()).start()
         threading.Thread(target=get_tiktok_hastag()).start()

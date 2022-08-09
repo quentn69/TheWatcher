@@ -88,6 +88,7 @@ OpenStreetMap
 osu!
 Pastebin
 Patreon
+Pinterest
 PyPi
 Quora
 Redbubble
@@ -97,6 +98,7 @@ SnapChat
 SourceForge
 Spotify
 Steam Groups
+Steam User
 Tenor
 TikTok #
 TikTok @
