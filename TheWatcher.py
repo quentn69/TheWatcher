@@ -614,7 +614,7 @@ def start():
             pass
 
 
-    def get_pinterest(): #https://www.pinterest.com/
+    def get_pinterest():
         os.system(f"title The Watcher ┃ Checking: Pinterest")
         pinterest = requests.get(f"https://www.pinterest.com/{usr}")
         if f'''<span class="tBJ dyH iFc sAJ O2T zDA IZT swG">@{usr}</span>''' in pinterest.text:
@@ -624,7 +624,7 @@ def start():
             pass
 
 
-    def get_pypi(): #https://pypi.org/user//
+    def get_pypi():
         os.system(f"title The Watcher ┃ Checking: PyPi")
         pypi = requests.get(f"https://pypi.org/user/{usr}/")
         if pypi.status_code == 200:
@@ -634,7 +634,7 @@ def start():
             pass
 
 
-    def get_quora(): #https://www.quora.com/profile/
+    def get_quora():
         os.system(f"title The Watcher ┃ Checking: Quora")
         quora = requests.get(f"https://www.quora.com/profile/{usr}/")
         if quora.status_code == 200:
@@ -644,7 +644,7 @@ def start():
             pass
 
 
-    def get_redbubble(): #https://www.redbubble.com/de/people//shop
+    def get_redbubble():
         os.system(f"title The Watcher ┃ Checking: Redbubble")
         redbubble = requests.get(f"https://www.redbubble.com/de/people/{usr}/shop")
         if redbubble.status_code == 200:
@@ -654,7 +654,7 @@ def start():
             pass
 
 
-    def get_replit(): #https://replit.com/@
+    def get_replit():
         os.system(f"title The Watcher ┃ Checking: Repl.it")
         replit = requests.get(f"https://replit.com/@{usr}")
         if replit.status_code == 200:
@@ -664,7 +664,7 @@ def start():
             pass
 
 
-    def get_snapchat(): #https://www.snapchat.com/add/
+    def get_snapchat():
         os.system(f"title The Watcher ┃ Checking: Snapchat")
         snapchat = requests.get(f"https://www.snapchat.com/add/{usr}")
         if snapchat.status_code == 200:
@@ -674,7 +674,7 @@ def start():
             pass
 
 
-    def get_sourceforge(): #https://sourceforge.net/u//profile/
+    def get_sourceforge():
         os.system(f"title The Watcher ┃ Checking: SourceForge")
         sourceforge = requests.get(f"https://sourceforge.net/u/{usr}/profile")
         if sourceforge.status_code == 200:
@@ -684,7 +684,7 @@ def start():
             pass
 
 
-    def get_spotify(): #https://open.spotify.com/user/
+    def get_spotify():
         os.system(f"title The Watcher ┃ Checking: Spotify")
         spotify = requests.get(f"https://open.spotify.com/user/{usr}")
         if spotify.status_code == 200:
@@ -694,7 +694,7 @@ def start():
             pass
 
 
-    def get_steamgroup(): #https://steamcommunity.com/groups/
+    def get_steamgroup():
         os.system(f"title The Watcher ┃ Checking: Steam Groups")
         steamgroup = requests.get(f"https://steamcommunity.com/groups/{usr}")
         if '''<p class="returnLink">''' in steamgroup.text:
@@ -704,7 +704,7 @@ def start():
             f.write(f"STEAM GROUPS        | https://steamcommunity.com/groups/{usr}\n")
 
 
-    def get_steamuser(): #https://steamcommunity.com/id/
+    def get_steamuser():
         os.system(f"title The Watcher ┃ Checking: Steam User")
         steam = requests.get(f"https://steamcommunity.com/groups/{usr}")
         if '''<p class="returnLink">''' in steam.text:
@@ -714,7 +714,7 @@ def start():
             f.write(f"STEAM USER          | https://steamcommunity.com/groups/{usr}\n")
 
 
-    def get_tellonym(): #https://tellonym.me/
+    def get_tellonym():
         os.system(f"title The Watcher ┃ Checking: Tellonym")
         tellonym = requests.get(f"https://tellonym.me/{usr}")
         if tellonym.status_code == 200:
@@ -724,7 +724,7 @@ def start():
             pass
 
 
-    def get_tenor(): #https://tenor.com/users/
+    def get_tenor():
         os.system(f"title The Watcher ┃ Checking: Tenor")
         tenor = requests.get(f"https://tenor.com/users/{usr}")
         if tenor.status_code == 200:
@@ -734,7 +734,7 @@ def start():
             pass
 
 
-    def get_tiktok_user(): #https://www.tiktok.com/@
+    def get_tiktok_user():
         session = requests.Session()
         c = session.get(f'https://www.tiktok.com/@{usr}', headers={'User-Agent': 'TikTok 17.4.0 rv:17 (iPhone; iOS 13.6.1; sv_SE) Cronet', 'Connection': 'keep-alive', }, timeout=60)
         status = c.status_code
@@ -745,7 +745,7 @@ def start():
             pass
 
 
-    def get_tiktok_hastag(): #https://www.tiktok.com/tag/
+    def get_tiktok_hastag():
         os.system(f"title The Watcher ┃ Checking: TikTok #")
         tiktok = requests.get(f"https://www.tiktok.com/tag/{usr}/")
         if tiktok.status_code == 200:
@@ -755,7 +755,7 @@ def start():
             pass
 
 
-    def get_tradingview(): #https://www.tradingview.com/u//
+    def get_tradingview():
         os.system(f"title The Watcher ┃ Checking: Tradingview")
         tradingview = requests.get(f"https://www.tradingview.com/u/{usr}")
         if tradingview.status_code == 200:
@@ -765,12 +765,22 @@ def start():
             pass
 
 
-    def get_tryhackme(): #https://tryhackme.com/p/
+    def get_tryhackme():
         os.system(f"title The Watcher ┃ Checking: TryHackMe")
         tryhackme = requests.get(f"https://tryhackme.com/p/{usr}")
         if tryhackme.status_code == 200:
             print(Colors.light_green + 'TryHackMe'.center(70))
             f.write(f"TRYHACKME           | https://tryhackme.com/p/{usr}\n")
+        else:
+            pass
+
+
+    def get_tumblr():
+        os.system(f"title The Watcher ┃ Checking: Tumblr")
+        tumblr = requests.get(f"https://{usr}.tumblr.com", allow_redirects=True)
+        if tumblr.status_code == 200:
+            print(Colors.light_green + 'Tumblr'.center(70))
+            f.write(f"TUMBLR              | https://{usr}.tumblr.com\n")
         else:
             pass
 
@@ -942,6 +952,7 @@ def start():
         threading.Thread(target=get_tiktok_user()).start()
         threading.Thread(target=get_tradingview()).start()
         threading.Thread(target=get_tryhackme()).start()
+        threading.Thread(target=get_tumblr()).start()
         threading.Thread(target=get_twitch()).start()
         threading.Thread(target=get_vk()).start()
         threading.Thread(target=get_vsco()).start()
