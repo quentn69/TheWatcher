@@ -986,7 +986,6 @@ def start():
     start()
 
 
-
 if __name__ == "__main__":
     os.system(f"title The Watcher ┃ Starting...")
     start()
