@@ -81,7 +81,7 @@ def start():
             print(Colors.light_green + '7Cups'.center(70))
             f.write(f"7CUPS               | https://www.7cups.com/@{usr}\n")
         else:
-            pass  
+            pass
 
 
     def get_aboutme():
@@ -263,7 +263,7 @@ def start():
             f.write(f"DRIBBBLE            | https://dribbble.com/{usr}/about\n")
         else:
             pass
-        
+
 
     def get_ebay():
         os.system(f"title The Watcher ┃ Checking: Ebay")
