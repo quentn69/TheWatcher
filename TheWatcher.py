@@ -749,7 +749,7 @@ def start():
         status = c.status_code
         if status == 200 or 204:
             print(Colors.green + "TikTok @".center(70))
-            f.write(f"TIKTOK              | https://www.quora.com/profile/{usr}/\n")
+            f.write(f"TIKTOK              | https://www.tiktok.com/@{usr}/\n")
         else:
             pass
 
