@@ -673,6 +673,16 @@ def start():
             pass
 
 
+    def get_roblox(): #https://www.roblox.com/user.aspx?username=timmywag
+        os.system(f"title The Watcher ┃ Checking: Roblox")
+        roblox = requests.get(f"https://www.roblox.com/user.aspx?username={usr}", allow_redirects=True)
+        if roblox.status_code == 200:
+            print(Colors.light_green + 'Roblox'.center(70))
+            f.write(f"ROBLOX              | https://www.roblox.com/user.aspx?username={usr}\n")
+        else:
+            pass
+
+
     def get_snapchat():
         os.system(f"title The Watcher ┃ Checking: Snapchat")
         snapchat = requests.get(f"https://www.snapchat.com/add/{usr}")
@@ -951,6 +961,7 @@ def start():
         get_quora()
         get_redbubble()
         get_replit()
+        get_roblox()
         get_snapchat()
         get_sourceforge()
         get_spotify()
