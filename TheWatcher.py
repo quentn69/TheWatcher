@@ -336,13 +336,16 @@ def start():
 
 
     def get_geniususer():
-        os.system(f"title The Watcher ┃ Checking: Genius (User)")
-        geniususer = requests.get(f"https://genius.com/{usr}")
-        if geniususer.status_code == 200:
-            print(Colors.light_green + 'Genius User'.center(70))
-            f.write(f"GENIUS USER         | https://genius.com/{usr}\n")
-        else:
+        if "." in usr:
             pass
+        else:
+            os.system(f"title The Watcher ┃ Checking: Genius (User)")
+            geniususer = requests.get(f"https://genius.com/{usr}")
+            if geniususer.status_code == 200:
+                print(Colors.light_green + 'Genius User'.center(70))
+                f.write(f"GENIUS USER         | https://genius.com/{usr}\n")
+            else:
+                pass
 
 
     def get_geocaching():
@@ -365,13 +368,16 @@ def start():
 
 
     def get_gitbook():
-        os.system(f"title The Watcher ┃ Checking: GitBook")
-        gitbook = requests.get(f"https://{usr}.gitbook.io/project")
-        if gitbook.status_code == 200:
-            print(Colors.light_green + 'GitBook'.center(70))
-            f.write(f"GITBOOK             | https://{usr}.gitbook.io/project\n")
-        else:
+        if "." in usr:
             pass
+        else:
+            os.system(f"title The Watcher ┃ Checking: GitBook")
+            gitbook = requests.get(f"https://{usr}.gitbook.io/project")
+            if gitbook.status_code == 200:
+                print(Colors.light_green + 'GitBook'.center(70))
+                f.write(f"GITBOOK             | https://{usr}.gitbook.io/project\n")
+            else:
+                pass
 
 
     def get_gitee():
@@ -437,10 +443,13 @@ def start():
     def get_instagram():
         os.system(f"title The Watcher ┃ Checking: Instagram")
         instagram = requests.get(f"https://www.picuki.com/profile/{usr}")
-        if instagram.status_code == 200:
+        if instagram.status_code == 200 and '''<img src="https://cdn1.picuki.com/hosted-by-instagram''' in instagram.text:
             print(Colors.light_green + 'Instagram'.center(70))
-            f.write(f"INSTAGRAM           | https://www.instagram.com/{usr}\n")
-        else:
+            f.write(f"INSTAGRAM (PUBLIC)  | https://www.instagram.com/{usr}\n")
+        if '''Profile is private.''' in instagram.text:
+            print(Colors.orange + 'Instagram (Private)'.center(70))
+            f.write(f"INSTAGRAM (PRIVATE) | https://www.instagram.com/{usr}\n")
+        elif '''404''' in instagram.text:
             pass
 
 
@@ -544,13 +553,16 @@ def start():
 
 
     def get_newgrounds():
-        os.system(f"title The Watcher ┃ Checking: Newgrounds")
-        newgrounds = requests.get(f"https://{usr}.newgrounds.com")
-        if newgrounds.status_code == 200:
-            print(Colors.light_green + 'Newgrounds'.center(70))
-            f.write(f"NEWGROUNDS          | https://{usr}.newgrounds.com\n")
-        else:
+        if "." in usr:
             pass
+        else:
+            os.system(f"title The Watcher ┃ Checking: Newgrounds")
+            newgrounds = requests.get(f"https://{usr}.newgrounds.com")
+            if newgrounds.status_code == 200:
+                print(Colors.light_green + 'Newgrounds'.center(70))
+                f.write(f"NEWGROUNDS          | https://{usr}.newgrounds.com\n")
+            else:
+                pass
 
 
     def get_notabugorg():
@@ -805,13 +817,16 @@ def start():
 
 
     def get_tumblr():
-        os.system(f"title The Watcher ┃ Checking: Tumblr")
-        tumblr = requests.get(f"https://{usr}.tumblr.com", allow_redirects=True)
-        if tumblr.status_code == 200:
-            print(Colors.light_green + 'Tumblr'.center(70))
-            f.write(f"TUMBLR              | https://{usr}.tumblr.com\n")
-        else:
+        if "." in usr:
             pass
+        else:
+            os.system(f"title The Watcher ┃ Checking: Tumblr")
+            tumblr = requests.get(f"https://{usr}.tumblr.com", allow_redirects=True)
+            if tumblr.status_code == 200:
+                print(Colors.light_green + 'Tumblr'.center(70))
+                f.write(f"TUMBLR              | https://{usr}.tumblr.com\n")
+            else:
+                pass
 
 
     def get_twitch(): #https://www.twitch.tv/
