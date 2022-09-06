@@ -25,10 +25,7 @@ SOFTWARE.
 # Don't forget to ⭐ this repository
 # But srsly, thank you very much for using.
 
-import os
-import random
-import datetime
-import requests
+import os, random, datetime, requests
 from time import *
 from pystyle import Colors, Colorate
 
