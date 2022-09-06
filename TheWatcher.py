@@ -434,6 +434,16 @@ def start():
             pass
 
 
+    def get_instagram():
+        os.system(f"title The Watcher ┃ Checking: Instagram")
+        instagram = requests.get(f"https://www.picuki.com/profile/{usr}")
+        if instagram.status_code == 200:
+            print(Colors.light_green + 'Instagram'.center(70))
+            f.write(f"INSTAGRAM           | https://www.instagram.com/{usr}\n")
+        else:
+            pass
+
+
     def get_irecommend():
         os.system(f"title The Watcher ┃ Checking: iRecommend")
         irecommend = requests.get(f"https://irecommend.ru/users/{usr}")
@@ -937,6 +947,7 @@ def start():
         get_gravatar()
         get_gutefrage()
         get_hacksterio()
+        get_instagram()
         get_irecommend()
         get_itchio()
         get_linktree()

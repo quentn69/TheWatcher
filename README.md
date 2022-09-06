@@ -71,6 +71,7 @@ Gradle
 Gravatar
 GuteFrage
 Hackster.io
+Instagram
 iRecommend
 itch.io
 Linktree
