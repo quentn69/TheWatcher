@@ -3,10 +3,6 @@
 
 <p align="center"><img src="https://user-images.githubusercontent.com/107768845/180644106-37ffd18e-3c4c-4116-a9f3-9c2e1ea9ad82.png", width="400", height="400"></p>
 
-```
-Finds a specific username - At incredible speed!
-```
-
 <p align="center">Please remember that this is a new project. If you have an idea or an error, open an issue.</p>
 
 ---
