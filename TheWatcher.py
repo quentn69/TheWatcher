@@ -440,7 +440,7 @@ def start():
             pass
 
 
-    def get_influenster(): #https://www.influenster.com/kyliejenner
+    def get_influenster():
         os.system(f"title The Watcher ┃ Checking: Influenster")
         influenster = requests.get(f"https://www.influenster.com/{usr}")
         if influenster.status_code == 200:
