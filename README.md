@@ -1,6 +1,5 @@
 <p align="center">Knowledge is power.</p>
 
-
 <p align="center"><img src="https://user-images.githubusercontent.com/107768845/180644106-37ffd18e-3c4c-4116-a9f3-9c2e1ea9ad82.png", width="400", height="400"></p>
 
 <p align="center">Please remember that this is a new project. If you have an idea or an error, open an issue.</p>
@@ -11,7 +10,7 @@
 
 ## Preview
 
-<p align="center"><img src="https://user-images.githubusercontent.com/107768845/180644122-4b3bdc11-eaee-4a90-9e8d-2063fa8653bd.png", width="700", height="500"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/107768845/188654244-3a5cf5a6-b8e7-4ca5-b692-80cef385c6f8.png", width="700", height="500"></p>
 
 ## Tutorial 
 
