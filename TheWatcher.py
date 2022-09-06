@@ -829,7 +829,7 @@ def start():
                 pass
 
 
-    def get_twitch(): #https://www.twitch.tv/
+    def get_twitch():
         os.system(f"title The Watcher ┃ Checking: Twitch")
         twitch = requests.get(f"https://www.twitch.tv/{usr}")
         if '''<!DOCTYPE html><html class="tw-root--hover"><head><meta charset="utf-8"><title>Twitch</title><meta property='og:site_name' content='Twitch'><meta property='og:title' ''' in twitch.text:
@@ -839,7 +839,7 @@ def start():
             f.write(f"TWITCH              | https://www.twitch.com/{usr}\n")
 
 
-    def get_vk(): #https://vk.com/
+    def get_vk():
         os.system(f"title The Watcher ┃ Checking: VK")
         vk = requests.get(f"https://vk.com/{usr}")
         if vk.status_code == 200:
@@ -849,7 +849,7 @@ def start():
             pass
 
 
-    def get_vsco(): #https://vsco.co//gallery
+    def get_vsco():
         os.system(f"title The Watcher ┃ Checking: VSCO")
         vsco = requests.get(f"https://vsco.co/{usr}/gallery")
         if vsco.status_code == 200:
@@ -859,7 +859,7 @@ def start():
             pass
 
 
-    def get_wattpad(): #https://www.wattpad.com/user/
+    def get_wattpad():
         os.system(f"title The Watcher ┃ Checking: Wattpad")
         wattpad = requests.get(f"https://www.wattpad.com/user/{usr}/")
         if wattpad.status_code == 200:
@@ -869,7 +869,7 @@ def start():
             pass
 
 
-    def get_wordpressuser(): #https://profiles.wordpress.org//
+    def get_wordpressuser():
         os.system(f"title The Watcher ┃ Checking: Wordpress @")
         wordpressuser = requests.get(f"https://profiles.wordpress.org/{usr}/")
         if wordpressuser.status_code == 200:
@@ -879,7 +879,7 @@ def start():
             pass
 
 
-    def get_yahooauthor(): #https://www.yahoo.com/author/
+    def get_yahooauthor():
         os.system(f"title The Watcher ┃ Checking: Yahoo")
         yahoo = requests.get(f"https://www.yahoo.com/author/{usr}/")
         if yahoo.status_code == 200:
