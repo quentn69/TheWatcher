@@ -307,11 +307,14 @@ def start():
 
     def get_facebook():
         os.system(f"title The Watcher ┃ Checking: Facebook")
-        facebook = requests.get(f"https://facebook.com/{usr}", allow_redirects=True)
-        if facebook.status_code == 200:
+        facebook = requests.get(f"https://facebook.com/{usr}")
+        if facebook.status_code == 200 and '''<img src="https://cdn1.picuki.com/hosted-by-Facebook''' in facebook.text:
             print(Colors.light_green + 'Facebook'.center(70))
-            f.write(f"FACEBOOK            | https://facebook.com/{usr}\n")
-        else:
+            f.write(f"Facebook            | https://facebook.com/{usr}\n")
+        if '''<i class="_585p img sp_Awgqz7K4lHq sx_98f749"><u>Notice</u></i>''' in facebook.text:
+            print(Colors.orange + 'Facebook'.center(70))
+            f.write(f"Facebook (PRIVATE)  | https://facebook.com/{usr}\n")
+        elif '''404''' in facebook.text:
             pass
 
 
@@ -445,9 +448,9 @@ def start():
         instagram = requests.get(f"https://www.picuki.com/profile/{usr}")
         if instagram.status_code == 200 and '''<img src="https://cdn1.picuki.com/hosted-by-instagram''' in instagram.text:
             print(Colors.light_green + 'Instagram'.center(70))
-            f.write(f"INSTAGRAM (PUBLIC)  | https://www.instagram.com/{usr}\n")
+            f.write(f"INSTAGRAM           | https://www.instagram.com/{usr}\n")
         if '''Profile is private.''' in instagram.text:
-            print(Colors.orange + 'Instagram (Private)'.center(70))
+            print(Colors.orange + 'Instagram'.center(70))
             f.write(f"INSTAGRAM (PRIVATE) | https://www.instagram.com/{usr}\n")
         elif '''404''' in instagram.text:
             pass
