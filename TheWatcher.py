@@ -440,6 +440,16 @@ def start():
             pass
 
 
+    def get_influenster(): #https://www.influenster.com/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Influenster")
+        influenster = requests.get(f"https://www.influenster.com/{usr}")
+        if influenster.status_code == 200:
+            print(Colors.light_green + 'Influenster'.center(70))
+            f.write(f"INFLUENSTER         | https://www.influenster.com/{usr}\n")
+        else:
+            pass
+
+
     def get_instagram():
         os.system(f"title The Watcher ┃ Checking: Instagram")
         instagram = requests.get(f"https://www.picuki.com/profile/{usr}")
@@ -777,9 +787,9 @@ def start():
 
     def get_tiktok_user():
         session = requests.Session()
-        c = session.get(f'https://www.tiktok.com/@{usr}', headers={'User-Agent': 'TikTok 17.4.0 rv:17 (iPhone; iOS 13.6.1; sv_SE) Cronet', 'Connection': 'keep-alive', }, timeout=60)
+        c = session.get(f'https://www.tiktok.com/@{usr}', headers={'User-Agent': 'TikTok 17.4.0 rv:17 (iPhone; iOS 13.6.1; sv_SE) Cronet', 'Connection': 'keep-alive', }, timeout=60, allow_redirects=True)
         status = c.status_code
-        if status == 200 or 204:
+        if status == 200:
             print(Colors.green + "TikTok @".center(70))
             f.write(f"TIKTOK              | https://www.tiktok.com/@{usr}/\n")
         else:
@@ -890,7 +900,7 @@ def start():
 
 
     if connection == True:
-        epic_sentences = ["Knowledge is power", "See everything", "(Cool and epic sentence here)"]
+        epic_sentences = ["Knowledge is power", "See everything", "(Cool and epic sentence here)", "TheWatcher is finally supporting Instagram!", "TheWatcher can now detect private accounts!"]
         epic_sentence = random.choice(epic_sentences)
         os.system(f"title The Watcher ┃ Welcome | mode 70, 40")
         print(Colorate.Horizontal(Colors.red_to_blue, banner, 1))
@@ -907,7 +917,7 @@ def start():
         print("Press ENTER to restart.".center(70))
         input()
         start()
-        
+
     try:
         folder_name = usr[0]
     except:
@@ -962,6 +972,7 @@ def start():
         get_gravatar()
         get_gutefrage()
         get_hacksterio()
+        get_influenster()
         get_instagram()
         get_irecommend()
         get_itchio()
