@@ -131,7 +131,6 @@ def start():
             pass
 
 
-
     def get_asciicinema():
         os.system(f"title The Watcher ┃ Checking: Asciicinema")
         asciicinema = requests.get(f"https://asciinema.org/~{usr}")
@@ -755,16 +754,6 @@ def start():
             f.write(f"STEAM GROUPS        | https://steamcommunity.com/groups/{usr}\n")
 
 
-    def get_steamuser():
-        os.system(f"title The Watcher ┃ Checking: Steam User")
-        steam = requests.get(f"https://steamcommunity.com/groups/{usr}")
-        if '''<p class="returnLink">''' in steam.text:
-            pass
-        else:
-            print(Colors.light_green + 'Steam User'.center(70))
-            f.write(f"STEAM USER          | https://steamcommunity.com/groups/{usr}\n")
-
-
     def get_tellonym():
         os.system(f"title The Watcher ┃ Checking: Tellonym")
         tellonym = requests.get(f"https://tellonym.me/{usr}")
@@ -1003,7 +992,6 @@ def start():
         get_sourceforge()
         get_spotify()
         get_steamgroup()
-        get_steamuser()
         get_tellonym()
         get_tenor()
         get_tiktok_hastag()
