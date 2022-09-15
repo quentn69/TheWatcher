@@ -481,6 +481,16 @@ def start():
         else:
             pass
 
+
+    def get_letterboxd():
+        os.system(f"title The Watcher ┃ Checking: Letterboxd")
+        letterbox = requests.get(f"https://letterboxd.com/{usr}")
+        if letterbox.status_code == 200:
+            print(Colors.light_green + 'Letterboxd'.center(70))
+            f.write(f"LETTERBOXD          | https://letterboxd.com/{usr}\n")
+        else:
+            pass        
+
     def get_linktree():
         os.system(f"title The Watcher ┃ Checking: Linktree")
         linktree = requests.get(f"https://www.linktr.ee/{usr}")
@@ -775,10 +785,9 @@ def start():
 
 
     def get_tiktok_user():
-        session = requests.Session()
-        c = session.get(f'https://www.tiktok.com/@{usr}', headers={'User-Agent': 'TikTok 17.4.0 rv:17 (iPhone; iOS 13.6.1; sv_SE) Cronet', 'Connection': 'keep-alive', }, timeout=60, allow_redirects=True)
-        status = c.status_code
-        if status == 200:
+        os.system(f"title The Watcher ┃ Checking: TikTok @")
+        tiktok = requests.get(f"https://urlebird.com/de/user/{usr}")
+        if tiktok.status_code == 200:
             print(Colors.green + "TikTok @".center(70))
             f.write(f"TIKTOK              | https://www.tiktok.com/@{usr}/\n")
         else:
@@ -889,7 +898,7 @@ def start():
 
 
     if connection == True:
-        epic_sentences = ["Knowledge is power", "See everything", "(Cool and epic sentence here)", "TheWatcher is finally supporting Instagram!", "TheWatcher can now detect private accounts!"]
+        epic_sentences = ["Knowledge is power", "See everything", "(Cool and epic sentence here)", "TheWatcher is finally supporting Instagram!", "TheWatcher can now detect private accounts!", "Finding TikTok Users is finally fixed!"]
         epic_sentence = random.choice(epic_sentences)
         os.system(f"title The Watcher ┃ Welcome | mode 70, 40")
         print(Colorate.Horizontal(Colors.red_to_blue, banner, 1))
@@ -965,6 +974,7 @@ def start():
         get_instagram()
         get_irecommend()
         get_itchio()
+        get_letterboxd()
         get_linktree()
         get_mapify()
         get_mastodoncloud()
