@@ -71,6 +71,7 @@ Hackster.io
 Instagram
 iRecommend
 itch.io
+Letterboxd
 Linktree
 Mapify
 Mastodon.cloud
