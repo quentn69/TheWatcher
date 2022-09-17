@@ -786,7 +786,7 @@ def start():
 
     def get_tiktok_user():
         os.system(f"title The Watcher ┃ Checking: TikTok @")
-        tiktok = requests.get(f"https://urlebird.com/de/user/{usr}")
+        tiktok = requests.get(f"https://urlebird.com/de/user/{usr}/")
         if tiktok.status_code == 200:
             print(Colors.green + "TikTok @".center(70))
             f.write(f"TIKTOK              | https://www.tiktok.com/@{usr}/\n")
