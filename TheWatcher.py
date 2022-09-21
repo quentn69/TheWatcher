@@ -819,7 +819,7 @@ def start():
         tryhackme = requests.get(f"https://tryhackme.com/p/{usr}")
         if tryhackme.status_code == 200:
             print(Colors.light_green + 'TryHackMe'.center(70))
-            f.write(f"TRYHACKME          | https://tryhackme.com/p/{usr}\n")
+            f.write(f"TRYHACKME           | https://tryhackme.com/p/{usr}\n")
         else:
             pass
 
