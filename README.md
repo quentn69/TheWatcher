@@ -107,6 +107,8 @@ Tradingview
 TryHackMe
 Tumblr
 Twitch
+Twitter
+VK
 VSCO
 Wattpad
 Wordpress (User)

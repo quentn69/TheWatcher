@@ -847,6 +847,16 @@ def start():
             f.write(f"TWITCH              | https://www.twitch.com/{usr}\n")
 
 
+    def get_twitter(): #https://nitter.net/kyliejenner
+        os.system(f"title The Watcher ┃ Checking: Twitter")
+        twitter = requests.get(f"https://nitter.net/{usr}")
+        if twitter.status_code == 200:
+            print(Colors.light_green + 'Twitter'.center(70))
+            f.write(f"TWITTER             | https://www.twitch.com/{usr}\n")
+        else:
+            pass
+
+
     def get_vk():
         os.system(f"title The Watcher ┃ Checking: VK")
         vk = requests.get(f"https://vk.com/{usr}")
@@ -1010,6 +1020,7 @@ def start():
         get_tryhackme()
         get_tumblr()
         get_twitch()
+        get_twitter()
         get_vk()
         get_vsco()
         get_wattpad()
